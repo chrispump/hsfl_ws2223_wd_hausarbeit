@@ -1,0 +1,1483 @@
+@import url(assets/fonts/inter/inter.css);
+
+:root {
+  --backgroundColor: rgba(247, 247, 247, 0.7);
+  --textColor: #393E46;
+  --textSize: "16px";
+  --primaryColor: #577b6e;
+  --secondaryColor: #46a89c;
+  --fontSans: "Inter var", "Inter", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --fontMonospace: monospace;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--fontSans);
+  font-size: --var(--textSize);
+  line-height: 1.5rem;
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  font-weight: 900;
+}
+
+
+h2 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--primaryColor);
+  transition: all .2s ease;
+}
+
+a:hover {
+  color: var(--secondaryColor)
+}
+
+a.anchor {
+  visibility: hidden;
+  display: block;
+  position: relative;
+  top: -130px;
+}
+
+p.editor {
+  font-size: 0.8rem;
+  margin-top: -1rem;
+  color: #999;
+}
+
+p.editor::before {
+  content: "👤";
+  font-size: 0.7rem;
+  margin-right: 0.5rem;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid #DDD;
+}
+
+code {
+  border: 1px solid #DDD;
+  border-radius: 5px;
+  background-color: #F3F3F3;
+  padding: 0 3px;
+  font-family: var(--fontMonospace);
+  font-weight: 500;
+}
+
+code.multiline {
+  display: block;
+  white-space: pre-wrap;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+details dl {
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px solid #DDD;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+details dl dt {
+  flex-basis: 30%;
+}
+
+details dl dd {
+  flex-basis: 60%;
+  flex-grow: 1;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1280px;
+}
+
+header {
+  background-color: var(--backgroundColor);
+  border-bottom: 1px solid #EEE;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  padding: 0 1rem;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  gap: 3rem;
+}
+
+header #logo {
+  height: 70px;
+}
+
+header #logo img {
+  height: 100%;
+  width: auto;
+}
+
+body>div {
+  display: grid;
+  grid-template-columns: .25fr .75fr;
+  padding-top: 120px;
+}
+
+body>div>aside {
+  height: 100vh;
+}
+
+body>div>aside>nav {
+  padding: 1rem 1rem 1rem 0;
+  border-radius: 10px;
+  overflow-y: auto;
+  top: 120px;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
+
+body>div>aside>nav>ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body>div>aside>nav>ul li {
+  line-height: 1.7rem;
+  font-weight: 600;
+}
+
+body>div>aside>nav>ul li>ul {
+  font-size: 0.8rem;
+  list-style: none;
+  padding-left: 1.5rem;
+  line-height: 1.7rem;
+  margin: 0.2rem 0;
+}
+
+body>div>aside>nav>ul li>ul li a:link,
+body>div>aside>nav>ul li>ul li a:active,
+body>div>aside>nav>ul li>ul li a:visited {
+  display: inline-block;
+  color: #555;
+  font-weight: 500;
+  padding: 1px 5px;
+  transition: all .1s ease;
+}
+
+body>div>aside>nav>ul li>ul li a:hover {
+  display: inline-block;
+  background-color: #EEE;
+  border-radius: 5px;
+  transition: all .2s ease;
+}
+
+
+body>div>main {
+  border-left: 1px solid #EEE;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+body>div>main>section {
+  padding: 1rem;
+  border-bottom: 1px solid #EEE;
+}
+
+table.property-table {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+table.property-table tr:not(:last-child) {
+  border-bottom: 1px solid #EEE;
+}
+
+table.property-table tr th,
+table.property-table tr td {
+  vertical-align: top;
+  padding: 1rem;
+}
+
+table.property-table tr th:first-child,
+table.property-table tr td:first-child {
+  padding: 1rem 1rem 1rem 0;
+  width: 35%;
+}
+
+table.property-table tr td:last-child,
+table.property-table tr td:last-child {
+  padding: 1rem 0 1rem 1rem;
+}
+
+table.property-table tr th {
+  text-align: left;
+}
+
+article.examples article.example {
+  margin-bottom: 3rem;
+}
+
+article.examples article.example .example-headline {
+  font-family: var(--fontMonospace);
+}
+
+article.examples article.example .example-headline::before {
+  content: "➡️";
+  margin-right: 0.6rem;
+}
+
+article.examples article.example .example-content {
+  margin-bottom: 1.5rem;
+}
+
+/* START */
+section#start-section {
+  min-height: 90vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+section#start-section h2 {
+  background: #FF5703;
+  background: repeating-linear-gradient(to bottom right, var(--secondaryColor) 0%, var(--primaryColor) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 10rem;
+  line-height: 10rem;
+  margin: 0;
+  font-weight: 900;
+}
+
+section#start-section h3 {
+  font-size: 3rem;
+  line-height: 4.2rem;
+  font-weight: 800;
+}
+
+section#start-section p {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+section#start-section ul {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* FLEX EXAMPLES (Christopher Pump) */
+/* FLEX EXAMPLE 1 */
+article.examples article.flex-example.example-1 .example-content>div {
+  display: flex;
+  gap: 10px;
+}
+
+article.examples article.flex-example.example-1 .example-content>div>div {
+  color: white;
+  background-color: var(--primaryColor);
+  flex-basis: 20%;
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+}
+
+article.examples article.flex-example.example-1 .example-content>div>div:last-child {
+  flex-basis: 60%;
+}
+
+/* FLEX EXAMPLE 2 */
+article.examples article.flex-example.example-2 .example-content>div:nth-of-type(1) {
+  display: flex;
+  gap: 10px;
+}
+
+article.examples article.flex-example.example-2 .example-content>div:nth-of-type(2) {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+article.examples article.flex-example.example-2 .example-content>div:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+article.examples article.flex-example.example-2 .example-content>div:nth-of-type(4) {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+
+article.examples article.flex-example.example-2 .example-content>div>div {
+  color: white;
+  background-color: var(--primaryColor);
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* FLEX EXAMPLE 3 */
+article.examples article.flex-example.example-3 .example-content>div:nth-of-type(1) {
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+article.examples article.flex-example.example-3 .example-content>div:nth-of-type(2) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+article.examples article.flex-example.example-3 .example-content>div:nth-of-type(3) {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 10px;
+}
+
+article.examples article.flex-example.example-3 .example-content>div>div {
+  color: white;
+  background-color: var(--primaryColor);
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  flex-basis: 40%;
+  flex-shrink: 0;
+}
+
+article.examples article.flex-example.example-4 .example-content>div {
+  display: flex;
+  gap: 10px;
+}
+
+article.examples article.flex-example.example-4 .example-content>div>div {
+  color: white;
+  background-color: var(--primaryColor);
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+}
+
+article.examples article.flex-example.example-4 .example-content>div:first-of-type>div:nth-of-type(1),
+article.examples article.flex-example.example-4 .example-content>div:first-of-type>div:nth-of-type(3) {
+  width: 30%;
+  animation: flex-example-4 2s ease-in-out infinite alternate;
+}
+
+article.examples article.flex-example.example-4 .example-content>div:first-of-type>div:nth-of-type(2) {
+  flex-grow: 1;
+  background-color: var(--secondaryColor);
+}
+
+article.examples article.flex-example.example-4 .example-content>div:last-of-type>div:nth-of-type(1),
+article.examples article.flex-example.example-4 .example-content>div:last-of-type>div:nth-of-type(3) {
+  width: 30%;
+  animation: flex-example-4 2s ease-in-out infinite alternate;
+}
+
+article.examples article.flex-example.example-4 .example-content>div:last-of-type>div:nth-of-type(2) {
+  flex-grow: 0;
+  background-color: var(--secondaryColor);
+}
+
+article.examples article.flex-example.example-5 .example-content>div {
+  display: flex;
+  gap: 10px;
+}
+
+article.examples article.flex-example.example-5 .example-content>div>div {
+  color: white;
+  background-color: var(--primaryColor);
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+}
+
+article.examples article.flex-example.example-5 .example-content>div:first-of-type>div:nth-of-type(1),
+article.examples article.flex-example.example-5 .example-content>div:first-of-type>div:nth-of-type(3) {
+  width: 30%;
+  animation: flex-example-5 2s ease-in-out infinite alternate;
+}
+
+article.examples article.flex-example.example-5 .example-content>div:first-of-type>div:nth-of-type(2) {
+  flex-shrink: 1;
+  width: 60%;
+  max-width: 80%;
+  background-color: var(--secondaryColor);
+}
+
+article.examples article.flex-example.example-5 .example-content>div:last-of-type>div:nth-of-type(1),
+article.examples article.flex-example.example-5 .example-content>div:last-of-type>div:nth-of-type(3) {
+  width: 30%;
+  animation: flex-example-5 2s ease-in-out infinite alternate;
+}
+
+article.examples article.flex-example.example-5 .example-content>div:last-of-type>div:nth-of-type(2) {
+  flex-shrink: 0;
+  width: 60%;
+  max-width: 80%;
+  background-color: var(--secondaryColor);
+}
+
+article.examples article.flex-example.example-6 .example-content>div {
+  display: flex;
+  gap: 10px;
+}
+
+article.examples article.flex-example.example-6 .example-content>div>div {
+  color: white;
+  background-color: var(--primaryColor);
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  flex: 1 1 auto;
+}
+
+article.examples article.flex-example.example-6 .example-content>div>div:nth-of-type(2) {
+  order: 3;
+}
+
+article.examples article.flex-example.example-7 .example-content>div,
+article.examples article.flex-example.example-8 .example-content>div,
+article.examples article.flex-example.example-9 .example-content>div,
+article.examples article.flex-example.example-10 .example-content>div {
+  display: flex;
+  gap: 10px;
+  border: 1px dashed #DDD;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+article.examples article.flex-example.example-7 .example-content>div>div,
+article.examples article.flex-example.example-8 .example-content>div>div,
+article.examples article.flex-example.example-9 .example-content>div>div,
+article.examples article.flex-example.example-10 .example-content>div>div {
+  background-color: var(--primaryColor);
+  border-radius: 5px;
+  padding: 1rem;
+  color: white;
+  flex: 0 0 20%;
+  text-align: center;
+}
+
+article.examples article.flex-example.example-7 .example-content>div:nth-of-type(1) {
+  justify-content: flex-start;
+}
+
+article.examples article.flex-example.example-7 .example-content>div:nth-of-type(2) {
+  justify-content: flex-end;
+}
+
+article.examples article.flex-example.example-7 .example-content>div:nth-of-type(3) {
+  justify-content: center;
+}
+
+article.examples article.flex-example.example-7 .example-content>div:nth-of-type(4) {
+  justify-content: space-between;
+}
+
+article.examples article.flex-example.example-7 .example-content>div:nth-of-type(5) {
+  justify-content: space-around;
+}
+
+article.examples article.flex-example.example-7 .example-content>div:nth-of-type(6) {
+  justify-content: space-evenly;
+}
+
+article.examples article.flex-example.example-8 .example-content>div {
+  height: 200px;
+}
+
+article.examples article.flex-example.example-8 .example-content>div>div {
+  height: auto;
+}
+
+article.examples article.flex-example.example-8 .example-content>div:nth-of-type(1) {
+  align-items: stretch;
+}
+
+article.examples article.flex-example.example-8 .example-content>div:nth-of-type(2) {
+  align-items: flex-start;
+}
+
+article.examples article.flex-example.example-8 .example-content>div:nth-of-type(3) {
+  align-items: flex-end;
+}
+
+article.examples article.flex-example.example-8 .example-content>div:nth-of-type(4) {
+  align-items: center;
+}
+
+article.examples article.flex-example.example-8 .example-content>div:nth-of-type(5) {
+  align-items: baseline;
+  line-height: 1rem;
+}
+
+article.examples article.flex-example.example-8 .example-content>div:nth-of-type(5)>div:nth-of-type(1) {
+  line-height: 9rem;
+  height: 9rem;
+}
+
+article.examples article.flex-example.example-8 .example-content>div:nth-of-type(5)>div:nth-of-type(2) {
+  height: 6rem;
+}
+
+article.examples article.flex-example.example-8 .example-content>div:nth-of-type(5)>div:nth-of-type(3) {
+  line-height: 3rem;
+  height: 4rem;
+}
+
+article.examples article.flex-example.example-9 .example-content>div {
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 200px;
+}
+
+article.examples article.flex-example.example-9 .example-content>div>div {
+  flex: 1 1 auto;
+  height: auto;
+}
+
+article.examples article.flex-example.example-9 .example-content>div>div:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+article.examples article.flex-example.example-10 .example-content>div {
+  height: 600px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+article.examples article.flex-example.example-10 .example-content>div>div {
+  flex-basis: 26%;
+}
+
+/* GRID EXAMPLES (Gunnar Clausen-Stuck) */
+article.examples article.grid-example .grid-container,
+article.examples article.grid-example .grid-container1,
+article.examples article.grid-example .grid-container2,
+article.examples article.grid-example .grid-container3,
+article.examples article.grid-example .grid-container4,
+article.examples article.grid-example .grid-container5,
+article.examples article.grid-example .grid-container6 {
+  padding: 10px;
+  border: 1px dashed #CCC;
+  border-radius: 5px;
+}
+
+
+article.examples article.grid-example .grid-item {
+  color: white;
+  background-color: var(--primaryColor);
+  border-radius: 5px;
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+/* GRID EXAMPLE 1 */
+article.examples article.grid-example.example-1 .grid-container {
+  display: grid;
+  grid-template-rows: 100px;
+  gap: 10px;
+}
+
+/* GRID EXAMPLE 2 */
+article.examples article.grid-example.example-2 .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+
+/* GRID EXAMPLE 3 */
+article.examples article.grid-example.example-3 .grid-container {
+  display: grid;
+  grid-template: 100px / repeat(2, 1fr);
+  gap: 10px;
+}
+
+
+/* GRID EXAMPLE 4 */
+article.examples article.grid-example.example-4 .grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+
+/* GRID EXAMPLE 5 */
+article.examples article.grid-example.example-5 .grid-container {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  gap: 10px;
+}
+
+article.examples article.grid-example.example-5 p:first-of-type {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+/* GRID EXAMPLE 6 */
+article.examples article.grid-example.example-6 .grid-container {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  gap: 10px;
+}
+
+
+article.examples article.grid-example.example-6 p:first-of-type {
+  grid-row: 1/4;
+}
+
+/* GRID EXAMPLE 7 */
+article.examples article.grid-example.example-7 .grid-container {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  gap: 10px;
+}
+
+article.examples article.grid-example.example-7 p:first-of-type {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* GRID EXAMPLE 8 */
+article.examples article.grid-example.example-8 .grid-container {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  gap: 10px;
+}
+
+article.examples article.grid-example.example-8 p:first-of-type {
+  grid-column: 1/4;
+}
+
+/* GRID EXAMPLE 9 */
+article.examples article.grid-example.example-9 .grid-container {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  gap: 10px;
+}
+
+article.examples article.grid-example.example-9 p:first-of-type {
+  grid-area: 1/1 / span 2 / span 3
+}
+
+/* GRID EXAMPLE 10 */
+article.examples article.grid-example.example-10 .grid-container {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  grid-template-areas: 'one two two' 'one three four';
+  gap: 10px;
+}
+
+article.examples article.grid-example.example-10 p:first-of-type {
+  grid-area: one;
+}
+
+article.examples article.grid-example.example-10 p:nth-of-type(2) {
+  grid-area: two;
+}
+
+article.examples article.grid-example.example-10 p:nth-of-type(3) {
+  grid-area: three;
+}
+
+article.examples article.grid-example.example-10 p:nth-of-type(4) {
+  grid-area: four;
+}
+
+/* GRID EXAMPLE 11 */
+article.examples article.grid-example.example-11 .grid-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-rows: 100px;
+  gap: 10px;
+}
+
+/* GRID EXAMPLE 12 */
+article.examples article.grid-example.example-12 .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-flow: column;
+  grid-auto-columns: 100px;
+  gap: 10px;
+}
+
+/* GRID EXAMPLE 13 */
+article.examples article.grid-example.example-13 .grid-container1 {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+}
+
+article.examples article.grid-example.example-13 .grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: dense;
+  gap: 10px;
+}
+
+article.examples article.grid-example.example-13 .grid-container2 p:nth-of-type(3) {
+  grid-column: auto / span 2;
+}
+
+/* GRID EXAMPLE 14 */
+article.examples article.grid-example.example-14 .grid-container1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+article.examples article.grid-example.example-14 .grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  gap: 10px;
+}
+
+article.examples article.grid-example.example-14 .grid-container3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  gap: 10px;
+}
+
+article.examples article.grid-example.example-14 .grid-container4 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 10px;
+}
+
+article.examples article.grid-example.example-14 .grid-container5 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: start;
+  gap: 10px;
+}
+
+article.examples article.grid-example.example-14 .grid-container6 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: end;
+  gap: 10px;
+}
+
+
+/* GRID EXAMPLE 15 */
+article.examples article.grid-example.example-15 .grid-container1 {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  align-content: space-evenly;
+  grid-template-columns: 1fr;
+  height: 350px;
+  gap: 10px;
+}
+
+article.examples article.grid-example.example-15 .grid-container2 {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  align-content: space-between;
+  grid-template-columns: 1fr;
+  height: 350px;
+  gap: 10px;
+}
+
+article.examples article.grid-example.example-15 .grid-container3 {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  align-content: space-around;
+  grid-template-columns: 1fr;
+  height: 350px;
+  gap: 10px;
+}
+
+article.examples article.grid-example.example-15 .grid-container4 {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  align-content: center;
+  grid-template-columns: 1fr;
+  height: 350px;
+  gap: 10px;
+}
+
+article.examples article.grid-example.example-15 .grid-container5 {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  align-content: start;
+  grid-template-columns: 1fr;
+  height: 350px;
+  gap: 10px;
+}
+
+article.examples article.grid-example.example-15 .grid-container6 {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  align-content: end;
+  grid-template-columns: 1fr;
+  height: 350px;
+  gap: 10px;
+}
+
+
+/* TEXT EXAMPLES (Finja Moser) */
+/* TEXT EXAMPLE 1 */
+article.examples article.text-example.example-1 .example-content p {
+  color: red;
+}
+
+/* TEXT EXAMPLE 2 */
+article.examples article.text-example.example-2 .example-content p {
+  color: white;
+  background-color: blue;
+}
+
+/* TEXT EXAMPLE 3 */
+article.examples article.text-example.example-3 .example-content p {
+  font-family: Arial;
+}
+
+article.examples article.text-example.example-3 .example-content p:last-of-type {
+  font-family: serif;
+}
+
+/* TEXT EXAMPLE 4 */
+article.examples article.text-example.example-4 .example-content p {
+  font-size: 1.5rem;
+}
+
+/* TEXT EXAMPLE 5 */
+article.examples article.text-example.example-5 .example-content p {
+  font-style: normal;
+}
+
+article.examples article.text-example.example-5 .example-content p:nth-of-type(2) {
+  font-style: italic;
+}
+
+article.examples article.text-example.example-5 .example-content p:nth-of-type(3) {
+  font-style: oblique;
+}
+
+/* TEXT EXAMPLE 6 */
+article.examples article.text-example.example-6 .example-content p:nth-of-type(1) {
+  font-weight: lighter;
+}
+
+article.examples article.text-example.example-6 .example-content p:nth-of-type(2) {
+  font-weight: 200;
+}
+
+article.examples article.text-example.example-6 .example-content p:nth-of-type(3) {
+  font-weight: 300;
+}
+
+article.examples article.text-example.example-6 .example-content p:nth-of-type(4) {
+  font-weight: normal;
+}
+
+article.examples article.text-example.example-6 .example-content p:nth-of-type(5) {
+  font-weight: 500;
+}
+
+article.examples article.text-example.example-6 .example-content p:nth-of-type(6) {
+  font-weight: 600;
+}
+
+article.examples article.text-example.example-6 .example-content p:nth-of-type(7) {
+  font-weight: bold;
+}
+
+article.examples article.text-example.example-6 .example-content p:nth-of-type(8) {
+  font-weight: 800;
+}
+
+article.examples article.text-example.example-6 .example-content p:nth-of-type(9) {
+  font-weight: 900;
+}
+
+/* TEXT EXAMPLE 7 */
+article.examples article.text-example.example-7 .example-content p:nth-of-type(1) {
+  text-transform: none;
+}
+
+article.examples article.text-example.example-7 .example-content p:nth-of-type(2) {
+  text-transform: uppercase;
+}
+
+article.examples article.text-example.example-7 .example-content p:nth-of-type(3) {
+  text-transform: lowercase;
+}
+
+article.examples article.text-example.example-7 .example-content p:nth-of-type(4) {
+  text-transform: capitalize;
+}
+
+/* TEXT EXAMPLE 8 */
+article.examples article.text-example.example-8 .example-content p:nth-of-type(1) {
+  text-decoration: overline;
+}
+
+article.examples article.text-example.example-8 .example-content p:nth-of-type(2) {
+  text-decoration: underline;
+}
+
+article.examples article.text-example.example-8 .example-content p:nth-of-type(3) {
+  text-decoration: line-through;
+}
+
+/* TEXT EXAMPLE 9 */
+article.examples article.text-example.example-9 .example-content p {
+  text-shadow: 2px 2px 3px red;
+}
+
+/* TEXT EXAMPLE 10 */
+article.examples article.text-example.example-10 .example-content p:nth-of-type(1) {
+  text-align: center;
+}
+
+article.examples article.text-example.example-10 .example-content p:nth-of-type(2) {
+  text-align: justify;
+}
+
+article.examples article.text-example.example-10 .example-content p:nth-of-type(3) {
+  text-align: left;
+}
+
+article.examples article.text-example.example-10 .example-content p:nth-of-type(4) {
+  text-align: right;
+}
+
+/* TEXT EXAMPLE 11 */
+article.examples article.text-example.example-11 .example-content p {
+  text-indent: 25%;
+}
+
+/* TEXT EXAMPLE 12 */
+article.examples article.text-example.example-12 .example-content p {
+  letter-spacing: 0.5em;
+}
+
+/* TEXT EXAMPLE 1 */
+article.examples article.text-example.example-13 .example-content p {
+  line-height: 3em;
+}
+
+/* TEXT EXAMPLE 14 */
+article.examples article.text-example.example-14 .example-content p {
+  direction: rtl;
+}
+
+/* TEXT EXAMPLE 15 */
+article.examples article.text-example.example-15 .example-content p {
+  word-spacing: 2em;
+}
+
+/* POSITION EXAMPLES (Onur Tatli) */
+/*  POSITION EXAMPLE 1 */
+article.examples article.position-example .example-content div {
+  border-radius: 5px;
+  text-align: center;
+}
+
+article.examples article.position-example.example-1 .example-content>div div {
+  padding: 10px;
+  border: 1px dashed #CCC;
+  border-radius: 5px;
+}
+
+article.examples article.position-example.example-1 .example-content>div div:nth-of-type(2) {
+  color: white;
+  position: static;
+  background-color: var(--primaryColor);
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+}
+
+/* POSITION EXAMPLE 2 */
+article.examples article.position-example.example-2 .example-content>div div {
+  padding: 10px;
+  border: 1px dashed #CCC;
+}
+
+article.examples article.position-example.example-2 .example-content>div div:nth-of-type(2) {
+  position: relative;
+  color: white;
+  padding: 10px;
+  border: none;
+  background-color: var(--primaryColor);
+  margin: 10px 0;
+  top: -20px;
+}
+
+/* POSITION EXAMPLE 3 */
+article.examples article.position-example.example-3 .example-content>div {
+  position: relative;
+}
+
+article.examples article.position-example.example-3 .example-content>div div:nth-of-type(2) {
+  position: absolute;
+  bottom: -30px;
+  left: 100px;
+  color: white;
+  background-color: var(--primaryColor);
+  padding: 10px;
+  border: none;
+  width: 50%;
+}
+
+article.examples article.position-example.example-3 .example-content>div div {
+  border: 1px dashed #CCC;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* POSITION EXAMPLE 4 */
+article.examples article.position-example.example-4 #fix-example-4 {
+  cursor: pointer;
+  margin-bottom: 2rem;
+  -moz-appearance: initial;
+  font-weight: 700;
+  visibility: hidden;
+}
+
+article.examples article.position-example.example-4 #fix-example-4::after {
+  width: 100%;
+  content: "Element fixieren";
+  visibility: visible;
+}
+
+article.examples article.position-example.example-4 #fix-example-4:checked::after {
+  content: "Fixierung aufheben";
+}
+
+article.examples article.position-example.example-4 .example-content>div {
+  position: static;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: var(--primaryColor);
+  padding: 10px;
+}
+
+article.examples article.position-example.example-4 #fix-example-4:checked+.example-content>div {
+  position: fixed;
+  width: 50%;
+  z-index: 99999;
+}
+
+/* POSITION EXAMPLE 5 */
+article.examples article.position-example.example-5 .example-content>div {
+  position: relative;
+  width: 100%;
+  overflow-y: auto;
+  height: 300px;
+  border: 1px dashed #CCC;
+  color: #CCC;
+}
+
+article.examples article.position-example.example-5 .example-content>div div {
+  position: static;
+  padding: 10px;
+}
+
+article.examples article.position-example.example-5 .example-content>div div:nth-of-type(1) {
+  position: sticky;
+  top: 10px;
+  background-color: var(--primaryColor);
+  border: none;
+  margin: 10px;
+  color: white;
+}
+
+article.examples article.position-example.example-5 .example-content>div div:nth-of-type(2) {
+  height: 800px;
+}
+
+/* ANIMATION EXAMLES (Timm Lüders) */
+article.examples article.animation-example .example-content>div {
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+article.examples article.animation-example .example-content>div div.square {
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  line-height: 100px;
+  color: white;
+  background-color: var(--primaryColor);
+  position: absolute;
+  border-radius: 5px;
+  animation-name: animation-example-square;
+  animation-timing-function: ease;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-duration: 3000ms;
+}
+
+/* ANIMATION EXAMPLE 1 */
+article.examples article.animation-example.example-1 .example-content>div:nth-of-type(1) div.square {
+  animation-duration: 2000ms;
+}
+
+article.examples article.animation-example.example-1 .example-content>div:nth-of-type(2) div.square {
+  animation-duration: 5000ms;
+}
+
+/* ANIMATION EXAMPLE 2 */
+article.examples article.animation-example.example-2 .example-content>div div.square {
+  animation-duration: 5000ms;
+}
+
+article.examples article.animation-example.example-2 .example-content>div:nth-of-type(1) div.square {
+  animation-timing-function: ease;
+}
+
+article.examples article.animation-example.example-2 .example-content>div:nth-of-type(2) div.square {
+  animation-timing-function: linear;
+}
+
+article.examples article.animation-example.example-2 .example-content>div:nth-of-type(3) div.square {
+  animation-timing-function: ease-in;
+}
+
+article.examples article.animation-example.example-2 .example-content>div:nth-of-type(4) div.square {
+  animation-timing-function: ease-out;
+}
+
+article.examples article.animation-example.example-2 .example-content>div:nth-of-type(5) div.square {
+  animation-timing-function: cubic-bezier(0, 1.16, .78, -0.91)
+}
+
+/* ANIMATION EXAMPLE 3 */
+article.examples article.animation-example.example-3 #play-example-3 {
+  cursor: pointer;
+  margin-bottom: 2rem;
+  -moz-appearance: initial;
+  font-weight: 700;
+  visibility: hidden;
+}
+
+article.examples article.animation-example.example-3 #play-example-3::after {
+  width: 100%;
+  content: "Animation starten";
+  visibility: visible;
+}
+
+article.examples article.animation-example.example-3 #play-example-3:checked::after {
+  content: "Animation pausieren";
+}
+
+article.examples article.animation-example.example-3 #play-example-3:not(:checked)+.example-content div.square {
+  animation-play-state: paused;
+}
+
+article.examples article.animation-example.example-3 #play-example-3:checked+.example-content div.square {
+  animation-play-state: running;
+}
+
+article.examples article.animation-example.example-3 .example-content>div:nth-of-type(2) div.square {
+  animation-delay: 5000ms;
+}
+
+/* ANIMATION EXAMPLE 4 */
+article.examples article.animation-example.example-4 .example-content>div:nth-of-type(1) div.square {
+  animation-direction: normal;
+}
+
+article.examples article.animation-example.example-4 .example-content>div:nth-of-type(2) div.square {
+  animation-direction: reverse;
+}
+
+article.examples article.animation-example.example-4 .example-content>div:nth-of-type(3) div.square {
+  animation-direction: alternate;
+}
+
+article.examples article.animation-example.example-4 .example-content>div:nth-of-type(4) div.square {
+  animation-direction: alternate-reverse;
+}
+
+/* ANIMATION EXAMPLE 5 */
+article.examples article.animation-example.example-5 #play-example-5 {
+  cursor: pointer;
+  margin-bottom: 2rem;
+  -moz-appearance: initial;
+  font-weight: 700;
+  visibility: hidden;
+}
+
+article.examples article.animation-example.example-5 #play-example-5::after {
+  width: 100%;
+  content: "Animation starten";
+  visibility: visible;
+}
+
+article.examples article.animation-example.example-5 #play-example-5:checked::after {
+  content: "Animation pausieren";
+}
+
+article.examples article.animation-example.example-5 #play-example-5:not(:checked)+.example-content div.square {
+  animation-play-state: paused;
+}
+
+article.examples article.animation-example.example-5 #play-example-5:checked+.example-content div.square {
+  animation-play-state: running;
+}
+
+
+article.examples article.animation-example.example-5 .example-content>div:nth-of-type(1) div.square {
+  animation-iteration-count: 3;
+}
+
+article.examples article.animation-example.example-5 .example-content>div:nth-of-type(2) div.square {
+  animation-iteration-count: infinite;
+}
+
+/* ANIMATION EXAMPLE 6 */
+article.examples article.animation-example.example-6 #play-example-6 {
+  cursor: pointer;
+  margin-bottom: 2rem;
+  -moz-appearance: initial;
+  font-weight: 700;
+  visibility: hidden;
+}
+
+article.examples article.animation-example.example-6 #play-example-6::after {
+  width: 100%;
+  content: "Animation starten";
+  visibility: visible;
+}
+
+article.examples article.animation-example.example-6 #play-example-6:checked::after {
+  content: "Animation pausieren";
+}
+
+article.examples article.animation-example.example-6 #play-example-6:not(:checked)+.example-content div.square {
+  animation-play-state: paused;
+}
+
+article.examples article.animation-example.example-6 #play-example-6:checked+.example-content div.square {
+  animation-play-state: running;
+}
+
+article.examples article.animation-example.example-6 .example-content>div div.square {
+  animation-iteration-count: 1;
+}
+
+article.examples article.animation-example.example-6 .example-content>div:nth-of-type(1) div.square {
+  animation-fill-mode: none;
+}
+
+article.examples article.animation-example.example-6 .example-content>div:nth-of-type(2) div.square {
+  animation-fill-mode: forwards;
+}
+
+article.examples article.animation-example.example-6 .example-content>div:nth-of-type(3) div.square {
+  animation-fill-mode: backwards;
+}
+
+article.examples article.animation-example.example-6 .example-content>div:nth-of-type(4) div.square {
+  animation-fill-mode: both;
+}
+
+/* ANIMATION EXAMPLE 7 */
+article.examples article.animation-example.example-7 .example-content>div:nth-of-type(1) div.square {
+  animation-play-state: running;
+}
+
+article.examples article.animation-example.example-7 .example-content>div:nth-of-type(2) div.square {
+  animation-play-state: paused;
+}
+
+/* ANIMATION EXAMPLE 8 */
+article.examples article.animation-example.example-8 .example-content>div div.square {
+  animation-name: animation-example-circle-to-square;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+
+/* MEDIA QUERY */
+@media (width < 1280px) {
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  header .container {
+    height: 100px;
+  }
+
+  header #logo {
+    height: 50px;
+  }
+
+  body>div {
+    grid-template-columns: 1fr;
+    padding-top: 100px;
+  }
+
+  body>div>aside {
+    display: none;
+  }
+
+  code.multiline {
+    font-size: 0.8rem;
+    letter-spacing: -0.05rem;
+    line-height: 1rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  section#start-section h2 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+
+  section#start-section h3 {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+  }
+
+  section#start-section p {
+    font-size: 0.9rem;
+  }
+
+  section#start-section ul {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+}
+
+/* KEYFRAMES */
+@keyframes flex-example-4 {
+  from {
+    width: 30%;
+  }
+
+  to {
+    width: 10%;
+  }
+}
+
+@keyframes flex-example-5 {
+  from {
+    width: 10%;
+  }
+
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes animation-example-square {
+  from {
+    left: 0;
+  }
+
+  to {
+    left: calc(100% - 100px);
+  }
+}
+
+@keyframes animation-example-circle-to-square {
+  0% {
+    border-radius: 5px 5px 5px 5px;
+    transform: rotate(0deg);
+  }
+
+  25% {
+    border-radius: 50% 5px 5px 5px;
+    transform: rotate(-90deg);
+  }
+
+  50% {
+    border-radius: 50% 50% 5px 5px;
+    transform: rotate(-180deg);
+  }
+
+  75% {
+    border-radius: 50% 50% 50% 5px;
+    transform: rotate(-270deg);
+  }
+
+  100% {
+    border-radius: 50% 50% 50% 50%;
+    transform: rotate(-360deg);
+  }
+}

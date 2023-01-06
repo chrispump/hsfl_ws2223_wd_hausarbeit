@@ -1,0 +1,3937 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <title>Hausarbeit - Webdesign WS 2022/2023</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div id="logo">
+        <img src="assets/img/hsfl-logo.png" alt="Logo der Hochschule Flensburg">
+      </div>
+      <h1>Hausarbeit - Webdesign WS 2022/2023</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <aside>
+      <nav>
+        <ul>
+          <!-- Start -->
+          <li><a href="#start">👋 Start</a></li>
+          <!-- Flexbox -->
+          <li>
+            <a href="#flexbox-part">📦 Flexbox-Layout</a>
+            <ul>
+              <li><a href="#flexbox-part-flex-basis">flex-basis</a></li>
+              <li><a href="#flexbox-part-flex-direction">flex-direction</a></li>
+              <li><a href="#flexbox-part-flex-wrap">flex-wrap</a></li>
+              <li><a href="#flexbox-part-flex-grow">flex-grow</a></li>
+              <li><a href="#flexbox-part-flex-shrink">flex-shrink</a></li>
+              <li><a href="#flexbox-part-order">order</a></li>
+              <li><a href="#flexbox-part-justify-content">justify-content</a></li>
+              <li><a href="#flexbox-part-align-items">align-items</a></li>
+              <li><a href="#flexbox-part-algin-self">align-self</a></li>
+              <li><a href="#flexbox-part-align-content">align-content</a></li>
+            </ul>
+          </li>
+          <!-- Grid -->
+          <li>
+            <a href="#grid-part">🔲 Grid-Layout</a>
+            <ul>
+              <li><a href="#grid-part-grid-template-rows">grid-template-rows</a></li>
+              <li><a href="#grid-part-grid-template-columns">grid-template-columns</a></li>
+              <li><a href="#grid-part-grid-template">grid-template</a></li>
+              <li><a href="#grid-part-gap">gap</a></li>
+              <li><a href="#grid-part-grid-row-start-end">grid-row-start/grid-row-end</a></li>
+              <li><a href="#grid-part-grid-row">grid-row</a></li>
+              <li><a href="#grid-part-grid-column-start-end">grid-column-start/grid-column-end</a></li>
+              <li><a href="#grid-part-grid-column">grid-column</a></li>
+              <li><a href="#grid-part-grid-area">grid-area</a></li>
+              <li><a href="#grid-part-grid-template-areas">grid-template-areas</a></li>
+              <li><a href="#grid-part-grid-auto-rows">grid-auto-rows</a></li>
+              <li><a href="#grid-part-grid-auto-columns">grid-auto-columns</a></li>
+              <li><a href="#grid-part-grid-auto-flow">grid-auto-flow</a></li>
+              <li><a href="#grid-part-justify-content">justify-content</a></li>
+              <li><a href="#grid-part-align-content">align-content</a></li>
+            </ul>
+          </li>
+          <!-- Text-Styling -->
+          <li>
+            <a href="#text-part">📝 Text-Styling mit CSS</a>
+            <ul>
+              <li><a href="#text-part-color">color</a></li>
+              <li><a href="#text-part-background-color">background-color</a></li>
+              <li><a href="#text-part-font-family">font-family</a></li>
+              <li><a href="#text-part-font-size">font-size</a></li>
+              <li><a href="#text-part-font-style">font-style</a></li>
+              <li><a href="#text-part-font-weight">font-weight</a></li>
+              <li><a href="#text-part-text-transform">text-transform</a></li>
+              <li><a href="#text-part-text-decoration">text-decoration</a></li>
+              <li><a href="#text-part-text-shadow">text-shadow</a></li>
+              <li><a href="#text-part-text-align">text-align</a></li>
+              <li><a href="#text-part-text-indent">text-indent</a></li>
+              <li><a href="#text-part-letter-spacing">letter-spacing</a></li>
+              <li><a href="#text-part-line-height">line-height</a></li>
+              <li><a href="#text-part-direction">direction</a></li>
+              <li><a href="#text-part-word-spacing">word-spacing</a></li>
+            </ul>
+          </li>
+          <!-- Position -->
+          <li>
+            <a href="#position-part">🔀 CSS position-Eigenschaft</a>
+            <ul>
+              <li><a href="#position-part-static">static</a></li>
+              <li><a href="#position-part-relative">relative</a></li>
+              <li><a href="#position-part-absolute">absolute</a></li>
+              <li><a href="#position-part-fixed">fixed</a></li>
+              <li><a href="#position-part-sticky">sticky</a></li>
+            </ul>
+          </li>
+          <!-- Animationen -->
+          <li>
+            <a href="#animation-part">👀 Animationen mit CSS</a>
+            <ul>
+              <li><a href="#animation-part-animation-duration">animation-duration</a></li>
+              <li><a href="#animation-part-animation-timing-function">animation-timing-function</a></li>
+              <li><a href="#animation-part-animation-delay">animation-delay</a></li>
+              <li><a href="#animation-part-animation-direction">animation-direction</a></li>
+              <li><a href="#animation-part-animation-iteration-count">animation-iteration-count</a></li>
+              <li><a href="#animation-part-animation-fill-mode">animation-fill-mode</a></li>
+              <li><a href="#animation-part-animation-play-state">animation-play-state</a></li>
+              <li><a href="#animation-part-keyframes">@keyframes</a></li>
+            </ul>
+          </li>
+          <!-- Quellen -->
+          <li><a href="#quellen">🧠 Quellen</a></li>
+        </ul>
+      </nav>
+
+    </aside>
+    <main>
+
+      <a class="anchor" id="start"></a>
+      <section id="start-section">
+        <h2>Hausarbeit</h2>
+        <h3>Webdesign Wintersemester 2022/2023</h3>
+        <div>
+          <p>von</p>
+          <ul>
+            <li>Christopher Pump</li>
+            <li>Finja Moser</li>
+            <li>Gunnar Clausen-Stuck</li>
+            <li>Onur Tatli</li>
+            <li>Timm Lüders</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Flexbox-Layout (Christopher Pump) -->
+      <a class="anchor" id="flexbox-part"></a>
+      <section id="flexbox-section">
+        <!-- Euer Thema -->
+        <h2>Flexbox-Layout</h2>
+        <p class="editor">Bearbeitet durch Christopher Pump</p>
+
+        <!-- Kurze Einleitung/Zusammenfassung -->
+        <article>
+          <h3>Was ist Flexbox?</h3>
+          <p>Flexbox bietet einen effizienten Weg dynamische und vor allem responsive Webseiten-Layouts zu erzeugen.<br>
+            Flexbox-Layouts haben die Fähigkeit sich dem verfügbaren Platz anzupassen, indem Elemente sich gleichmäßig
+            verteilen oder sich bei Bedarf vergrößern und verkleinern können.
+            Vor der Einführung von Flexbox und Grid-Layout mussten Webseiten-Layouts mit Hilfe der CSS-Eigenschaften
+            <code>position</code> und <code>float</code> oder in Form von Tabellenstrukturen gestaltet werden.
+          </p>
+        </article>
+
+        <article>
+          <h3>CSS-Eigenschaften</h3>
+          <!-- Tabelle nach diesem Schema mit allen Eigenschaften die ihr vorstellen wollt (am besten alle) -->
+          <table class="property-table">
+            <thead>
+              <tr>
+                <th>Eigenschaft</th>
+                <th>Beschreibung</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Display Flex -->
+              <tr>
+                <td>
+                  <code>display: flex;</code>
+                </td>
+                <td>
+                  Wendet das Flexbox-Layout auf das selektierte Element an. Alle direkten Kindelemente werden zu
+                  Flex-Items.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>flex-basis</code>
+                </td>
+                <td>
+                  Legt die initiale Größe eines Flex-Items fest. Die Größe bezieht sich auf die Hauptachse. Siehe
+                  <code>flex-direction</code>.
+                </td>
+              </tr>
+              <!-- Flex Direction -->
+              <tr>
+                <td>
+                  <code>flex-direction</code>
+                </td>
+                <td>
+                  Kontrolliert die Richtung, in welche Flex-Items ausgerichtet werden.<br>
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>row</code></dt>
+                      <dd>nebeneinander (Standard)</dd>
+
+                      <dt><code>row-reverse</code></dt>
+                      <dd>nebeneinander in umgekehrter Reihenfolge</dd>
+
+                      <dt><code>column</code></dt>
+                      <dd>untereinander</dd>
+
+                      <dt><code>column-reverse</code></dt>
+                      <dd>untereinander in umgekehrter Reihenfolge</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <!-- Flex Wrap -->
+              <tr>
+                <td>
+                  <code>flex-wrap</code>
+                </td>
+                <td>
+                  Kontrolliert, wie sich Flex-Items bei einem Zeilenumbruch verhalten sollen.<br>
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>nowrap (Standard)</code></dt>
+                      <dd>kein Zeilenumbruch, Flex-Items ignorieren die Größe des Elternelements</dd>
+
+                      <dt><code>wrap</code></dt>
+                      <dd>Zeilenumbruch für Flex-Items die nicht mehr in das Elternelement passen</dd>
+
+                      <dt><code>wrap-reverse</code></dt>
+                      <dd>umkerkehrter Zeilenumbruch für Flex-Items die nicht mehr in das Elternelement passen</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <!-- Flex Flow -->
+              <tr>
+                <td>
+                  <code>flex-flow</code>
+                </td>
+                <td>
+                  Kurzschreibweise für <code>flex-direction</code> und <code>flex-wrap</code>.<br>
+                  <strong>Standardwert</strong> ist <code>row nowrap</code>.
+                </td>
+              </tr>
+              <!-- Flex Grow -->
+              <tr>
+                <td>
+                  <code>flex-grow</code>
+                </td>
+                <td>
+                  Kontrolliert, ob sich ein Flex-Item vergrößern darf, wenn Platz verfügbar ist.<br>
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>0 (Standard)</code></dt>
+                      <dd>Flex-Item darf sich nicht vergrößern</dd>
+
+                      <dt><code>1</code></dt>
+                      <dd>Flex-Item darf verfügbaren Platz ausfüllen</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <!-- Flex Shrink -->
+              <tr>
+                <td>
+                  <code>flex-shrink</code>
+                </td>
+                <td>
+                  Kontrolliert, ob sich ein Flex-Item verkleinern darf, wenn notwendig.<br>
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>1 (Standard)</code></dt>
+                      <dd>Flex-Item darf sich verkleinern</dd>
+
+                      <dt><code>0</code></dt>
+                      <dd>Flex-Item darf sich nicht verkleinern</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <!-- Flex -->
+              <tr>
+                <td>
+                  <code>flex</code>
+                </td>
+                <td>
+                  Kurzschreibweise für <code>flex-grow</code>, <code>flex-shrink</code> und <code>flex-basis</code>.<br>
+                  <strong>Standardwert</strong> ist <code>0 1 auto</code>.
+                </td>
+              </tr>
+              <!-- Order -->
+              <tr>
+                <td>
+                  <code>order</code>
+                </td>
+                <td>
+                  Bestimmt an welcher Position sich ein Flex-Item befinden soll.
+                  <strong>Standardmäßig</strong> erfolgt die Anordnung der Flex-Items wie im Markup angegeben.
+                </td>
+              </tr>
+              <!-- Justify Content -->
+              <tr>
+                <td>
+                  <code>justify-content</code>
+                </td>
+                <td>
+                  Beeinflusst die Ausrichtung der Flex-Items entlang der Hauptachse. Siehe
+                  <code>flex-direction</code>.<br>
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>flex-start</code></dt>
+                      <dd>Flex-Items werden am Anfang des Elternelements ausgerichtet (Standard)</dd>
+
+                      <dt><code>flex-end</code></dt>
+                      <dd>Flex-Items werden am Ende des Elternelements ausgerichtet</dd>
+
+                      <dt><code>center</code></dt>
+                      <dd>Flex-Items werden im Elternelement zentriert</dd>
+
+                      <dt><code>space-between</code></dt>
+                      <dd>Flex-Items werden gleichmäßig von Anfang bis Ende verteilt</dd>
+
+                      <dt><code>space-around</code></dt>
+                      <dd>Flex-Items werden gleichmäßig von Anfang bis Ende verteilt, aber haben jeweils gleiche
+                        Abstände auf beiden Seiten</dd>
+
+                      <dt><code>space-evenly</code></dt>
+                      <dd>Flex-Items werden so verteilt, dass sowohl der Abstand zwischen zwei Flex-Items immer gleich
+                        ist, als auch der Abstand zu Anfang und Ende des Elternelements</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <!-- Align Items -->
+              <tr>
+                <td>
+                  <code>align-items</code>
+                </td>
+                <td>
+                  Beeinflusst die Ausrichtung der Flex-Items entgegen der Hauptachse. Siehe
+                  <code>flex-direction</code>.<br>
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>stretch</code></dt>
+                      <dd>Flex-Items füllen das Elternelement entgegen der Hauptachse komplett aus (Standard)</dd>
+
+                      <dt><code>flex-start</code></dt>
+                      <dd>Flex-Items werden entgegen der Hauptachse am Anfang des Elternelements ausgerichtet</dd>
+
+                      <dt><code>flex-end</code></dt>
+                      <dd>Flex-Items werden entgegen der Hauptachse am Ende des Elternelements ausgerichtet</dd>
+
+                      <dt><code>center</code></dt>
+                      <dd>Flex-Items werden entgegen der Hauptachse im Elternelement zentriert</dd>
+
+                      <dt><code>baseline</code></dt>
+                      <dd>Flex-Items werden entgegen der Hauptachse an ihrer Grundlinie ausgerichtet</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <!-- Align Self -->
+              <tr>
+                <td>
+                  <code>align-self</code>
+                </td>
+                <td>
+                  Überschreibt die standardmäßige Anordnung für einzelne Flex-items.<br>
+                  Die <strong>Werte</strong> entsprechen denen von <code>align-items</code>.
+                </td>
+              </tr>
+              <!-- Align Content -->
+              <tr>
+                <td>
+                  <code>align-content</code>
+                </td>
+                <td>
+                  Beeinflusst die Ausrichtung aller Flex-Items in mehrzeiligen Flex-Layouts entgegen der Hauptachse,
+                  also nur für Elternelemente ohne <code>flex-wrap: no-wrap;</code>.<br>
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>normal</code></dt>
+                      <dd>Flex-Items verbleiben auf ihrer Standardposition (Standard)</dd>
+
+                      <dt><code>flex-start</code></dt>
+                      <dd>Flex-Items werden entgegen der Hauptachse am Anfang des Elternelements ausgerichtet</dd>
+
+                      <dt><code>flex-end</code></dt>
+                      <dd>Flex-Items werden entgegen der Hauptachse am Ende des Elternelements ausgerichtet</dd>
+
+                      <dt><code>center</code></dt>
+                      <dd>Flex-Items werden entgegen der Hauptachse im Elternelement zentriert</dd>
+
+                      <dt><code>space-between</code></dt>
+                      <dd>Flex-Items werden entgegen der Hauptachse gleichmäßig von Anfang bis Ende verteilt</dd>
+
+                      <dt><code>space-around</code></dt>
+                      <dd>Flex-Items werden entgegen der Hauptachse gleichmäßig von Anfang bis Ende verteilt, aber haben
+                        jeweils gleiche Abstände auf beiden Seiten</dd>
+
+                      <dt><code>space-evenly</code></dt>
+                      <dd>Flex-Items werden entgegen der Hauptachse so verteilt, dass sowohl der Abstand zwischen zwei
+                        Flex-Items immer gleich ist, als auch der Abstand zu Anfang und Ende des Elternelements</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <!-- Gap -->
+              <tr>
+                <td>
+                  <code>gap</code>,<br>
+                  <code>row-gap</code>,<br>
+                  <code>column-gap</code>
+                </td>
+                <td>
+                  Legt den Abstand zwischen Flex-Items fest. Der Abstand bezieht sich nur
+                  <strong>Sibling-Elemente</strong> und nicht auf den Rand des <strong>Parent-Elements.</strong>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- Beispiele -->
+        <article class="examples">
+          <h3>Beispiele</h3>
+
+          <!-- Flex Example 1 -->
+          <a class="anchor" id="flexbox-part-flex-basis"></a>
+          <article class="example flex-example example-1">
+            <h4 class="example-headline">flex-basis</h4>
+            <p class="example-info">
+              In diesem Beispiel haben die Items <strong>A</strong> und <strong>B</strong> eine Basis-Größe von 20%, das
+              Item <strong>C</strong> eine Basis-Größe von 60%.
+            </p>
+            <div class="example-content">
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    div.flex-basis-example {
+      display: flex;
+    }
+
+    div.flex-basis-example &gt; div {
+      flex-basis: 20%;
+    }
+
+    div.flex-basis-example &gt; div:last-child {
+      flex-basis: 60%;
+    }
+  &lt;/style&gt;
+
+  &lt;div class=&quot;flex-basis-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;  
+              </code>
+            </div>
+          </article>
+
+          <!-- Flex Example 2 -->
+          <a class="anchor" id="flexbox-part-flex-direction"></a>
+          <article class="example flex-example example-2">
+            <h4 class="example-headline">flex-direction</h4>
+            <p class="example-info">
+              Die folgenen Beispiele zeigen die Items <strong>A</strong>, <strong>B</strong> und <strong>C</strong> mit
+              unterschiedlichen Hauptachsen.
+            </p>
+            <div class="example-content">
+              <h5>row</h5>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+              <h5>row-reverse</h5>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+              <h5>column</h5>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+              <h5>column-reverse</h5>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .flex-direction-example:nth-of-type(1) {
+      display: flex;
+    }
+
+    .flex-direction-example:nth-of-type(2) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .flex-direction-example:nth-of-type(3) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .flex-direction-example:nth-of-type(4) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  &lt;/style&gt;
+
+  &lt;div class=&quot;flex-direction-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex-direction-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex-direction-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex-direction-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Flex Example 3 -->
+          <a class="anchor" id="flexbox-part-flex-wrap"></a>
+          <article class="example flex-example example-3">
+            <h4 class="example-headline">flex-wrap</h4>
+            <p class="example-info">
+              Dieses Beispiel wie sich die unterschiedlichen Werte für <code>flex-wrap</code> auf den Zeilenumbruch
+              auswirken.
+            </p>
+            <div class="example-content">
+              <h5>nowrap</h5>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+              <h5>wrap</h5>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+              <h5>wrap-reverse</h5>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .flex-wrap-example:nth-of-type(1) {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+    }
+
+    .flex-wrap-example:nth-of-type(2) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .flex-wrap-example:nth-of-type(3) {
+      display: flex;
+      flex-wrap: wrap-reverse;
+      gap: 10px;
+    }
+
+    .flex-wrap-example &gt; div {
+      flex: 0 0 40%;
+    }
+  &lt;/style&gt;
+
+  &lt;div class=&quot;flex-wrap-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex-wrap-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex-wrap-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;             
+              </code>
+            </div>
+          </article>
+
+          <!-- Flex Example 4 -->
+          <a class="anchor" id="flexbox-part-flex-grow"></a>
+          <article class="example flex-example example-4">
+            <h4 class="example-headline">flex-grow</h4>
+            <p class="example-info">
+              In diesem Beispiel verändern die Items <strong>A</strong> und <strong>C</strong> ihre Größe, das Item
+              <strong>B</strong> wächst automatisch auf die verfügbare Größe.
+              Im Beispiel darunter darf das Item <strong>B</strong> nicht auf die verfügbare Größe anwachsen.
+            </p>
+            <div class="example-content">
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+              <hr>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .flex-grow-example {
+      display: flex;
+    }
+
+    .flex-grow-example:first-of-type &gt; div {
+      width: 30%;
+    }
+
+    .flex-grow-example:first-of-type &gt; div:nth-of-type(2) {
+      flex-grow: 1;
+    }
+
+    .flex-grow-example:last-of-type &gt; div {
+      width: 30%;
+    }
+
+    .flex-grow-example:last-of-type &gt; div:nth-of-type(2) {
+      flex-grow: 0;
+    }
+  &lt;/style&gt;
+
+  &lt;div class=&quot;flex-grow-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex-grow-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;             
+       
+              </code>
+            </div>
+          </article>
+
+          <!-- Flex Example 5 -->
+          <a class="anchor" id="flexbox-part-flex-shrink"></a>
+          <article class="example flex-example example-5">
+            <h4 class="example-headline">flex-shrink</h4>
+            <p class="example-info">
+              In diesem Beispiel verändern die Items <strong>A</strong> und <strong>C</strong> ihre Größe, das Item
+              <strong>B</strong> schrumpft automatisch um den anderen Items den Platz zur Verfügung zu stellen.
+              Im Beispiel darunter darf das Item <strong>B</strong> nicht kleiner werden.
+            </p>
+            <div class="example-content">
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+              <hr>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .flex-shrink-example {
+      display: flex;
+    }
+
+    .flex-shrink-example:first-of-type &gt; div {
+      width: 30%;
+    }
+
+    .flex-shrink-example:first-of-type &gt; div:nth-of-type(2) {
+      width: 60%
+      flex-shrink: 1;
+    }
+
+    .flex-shrink-example:last-of-type &gt; div {
+      width: 30%;
+    }
+
+    .flex-shrink-example:last-of-type &gt; div:nth-of-type(2) {
+      width: 60%
+      flex-shrink: 0;
+    }
+  &lt;/style&gt;
+  
+  &lt;div class=&quot;flex-shrink-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex-shrink-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;           
+              </code>
+            </div>
+          </article>
+
+          <!-- Flex Example 6 -->
+          <a class="anchor" id="flexbox-part-order"></a>
+          <article class="example flex-example example-6">
+            <h4 class="example-headline">order</h4>
+            <p class="example-info">
+              In diesem Beispiel wird die Position der Items <strong>B</strong> und <strong>C</strong> vertauscht.
+            </p>
+
+            <div class="example-content">
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .flex-order-example {
+      display: flex;
+    }
+
+    .flex-order-example &gt; div:nth-of-type(2) {
+      order: 3;
+    }   
+  &lt;/style&gt;
+
+  &lt;div class=&quot;flex-order-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;          
+              </code>
+            </div>
+          </article>
+
+          <!-- Flex Example 7 -->
+          <a class="anchor" id="flexbox-part-justify-content"></a>
+          <article class="example flex-example example-7">
+            <h4 class="example-headline">justify-content</h4>
+            <p class="example-info">Dieses Beispiel zeigt die verschieden Ausrichtungsoptionen mit
+              <code>justify-content</code>.
+            </p>
+
+            <div class="example-content">
+              <h5>flex-start</h5>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+              <h5>flex-end</h5>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+              <h5>center</h5>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+              <h5>space-between</h5>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+              <h5>space-around</h5>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+              <h5>space-evenly</h5>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .flex-justify-content-example {
+      display: flex;
+    }
+
+    .flex-justify-content-example:nth-of-type(1) {
+      justify-content: flex-start;
+    }   
+
+    .flex-justify-content-example:nth-of-type(2) {
+      justify-content: flex-end;
+    } 
+
+    .flex-justify-content-example:nth-of-type(3) {
+      justify-content: center;
+    }
+
+    .flex-justify-content-example:nth-of-type(4) {
+      justify-content: space-between;
+    } 
+
+    .flex-justify-content-example:nth-of-type(5) {
+      justify-content: space-around;
+    } 
+
+    .flex-justify-content-example:nth-of-type(6) {
+      justify-content: space-evenly;
+    } 
+  &lt;/style&gt;
+
+  &lt;div class=&quot;flex-justify-content-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex-justify-content-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;  
+  &lt;div class=&quot;flex-justify-content-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex-justify-content-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt; 
+  &lt;div class=&quot;flex-justify-content-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex-justify-content-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;         
+              </code>
+            </div>
+          </article>
+
+          <!-- Flex Example 8 -->
+          <a class="anchor" id="flexbox-part-align-items"></a>
+          <article class="example flex-example example-8">
+            <h4 class="example-headline">align-items</h4>
+            <p class="example-info">Dieses Beispiel zeigt die verschieden Ausrichtungsoptionen mit
+              <code>justify-content</code>.
+            </p>
+
+            <div class="example-content">
+              <h5>stretch</h5>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+              <h5>flex-start</h5>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+              <h5>flex-end</h5>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+              <h5>center</h5>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+              <h5>baseline</h5>
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .flex-align-items-example {
+      display: flex;
+    }
+
+    .flex-align-items-example:nth-of-type(1) {
+      align-items: stretch
+    }   
+
+    .flex-align-items-example:nth-of-type(2) {
+      align-items: flex-start;
+    } 
+
+    .flex-align-items-example:nth-of-type(3) {
+      align-items: flex-end;
+    }
+
+    .flex-align-items-example:nth-of-type(4) {
+      align-items: center;
+    } 
+
+    .flex-align-items-example:nth-of-type(5) {
+      align-items: baseline;
+    } 
+
+  &lt;/style&gt;
+
+  &lt;div class=&quot;flex-align-items-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex-align-items-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;  
+  &lt;div class=&quot;flex-align-items-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;flex-align-items-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt; 
+  &lt;div class=&quot;flex-align-items-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;          
+              </code>
+            </div>
+          </article>
+
+          <!-- Flex Example 9 -->
+          <a class="anchor" id="flexbox-part-align-self"></a>
+          <article class="example flex-example example-9">
+            <h4 class="example-headline">align-self</h4>
+            <p class="example-info">In diesem Beispiel wird nur Item <strong>B</strong> unten ausgerichtet.</p>
+
+            <div class="example-content">
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .flex-align-self-example {
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .flex-align-self-example > div:nth-of-type(2) {
+      align-self: flex-end;
+    }   
+  &lt;/style&gt;
+
+  &lt;div class=&quot;flex-align-self-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;       
+              </code>
+            </div>
+          </article>
+
+          <!-- Flex Example 10 -->
+          <a class="anchor" id="flexbox-part-align-content"></a>
+          <article class="example flex-example example-10">
+            <h4 class="example-headline">align-content</h4>
+            <p class="example-info">In diesem Beispiel werden die Items des mehrzeiligen Flex-Layouts mit
+              <code>space-around</code> gleichmäßig auf die zur Verfügung stehende Container-Höhe verteilt. Im
+              Allgemeinen verhält sich diese Eigenschaft wie <code>justify-content</code> entgegen der Hauptachse.
+            </p>
+
+            <div class="example-content">
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+                <div>D</div>
+                <div>E</div>
+                <div>F</div>
+                <div>G</div>
+                <div>H</div>
+                <div>I</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .flex-align-content-example {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-around;
+    }
+  &lt;/style&gt;
+
+  &lt;div class=&quot;flex-align-content-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+    &lt;div&gt;D&lt;/div&gt;
+    &lt;div&gt;E&lt;/div&gt;
+    &lt;div&gt;F&lt;/div&gt;
+    &lt;div&gt;G&lt;/div&gt;
+    &lt;div&gt;H&lt;/div&gt;
+    &lt;div&gt;I&lt;/div&gt;
+  &lt;/div&gt;              
+              </code>
+            </div>
+          </article>
+        </article>
+      </section>
+
+      <!-- Grid-Layout (Gunnar Clausen-Stuck) -->
+      <a class="anchor" id="grid-part"></a>
+      <section>
+        <h2>Grid-Layout</h2>
+        <p class="editor">Bearbeitet durch Gunnar Clausen-Stuck</p>
+        <article>
+          <h3>Was ist ein Grid-Layout?</h3>
+          <p>Ein CSS-Grid-Layout ermöglicht ein rasterbasiertes System mit Zeilen und Spalten zu erstellen, welches
+            durch die vielseitigen Platzierungsmöglichkeiten der untergeordneten Elemente das designen von Webseiten
+            vereinfacht.</p>
+        </article>
+
+        <article>
+          <h3>Grid-Eigenschaften</h3>
+          <table class="property-table">
+            <thead>
+              <tr>
+                <th>Eigenschaft</th>
+                <th>Beschreibung</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <code>display: grid;</code>
+                </td>
+                <td>
+                  Ein selektiertes Element wird zum Grid-Container und die untergeordneten
+                  <strong>Child-Elemente</strong> werden zu
+                  Grid-Items.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>grid-template-rows</code>
+                </td>
+                <td>
+                  Definiert die Anzahl und die Höhe der Zeilen.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>grid-template-columns</code>
+                </td>
+                <td>
+                  Definiert die Anzahl und die Breite der Spalten.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>grid-template</code>
+                </td>
+                <td>
+                  Kurzschreibweise für <code>grid-template-rows</code> und <code>grid-template-columns</code>.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>grid-row-start</code>
+                </td>
+                <td>
+                  Definiert an welcher Zeilenlinie das Grid-Item beginnt.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>grid-row-end</code>
+                </td>
+                <td>
+                  Definiert an welcher Zeilenlinie das Grid-Item endet.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>grid-row</code>
+                </td>
+                <td>
+                  Kurzschreibweise für <code>grid-row-start</code> und <code>grid-row-end</code>.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>grid-column-start</code>
+                </td>
+                <td>
+                  Definiert an welcher Spaltenlinie das Grid-Item beginnt.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>grid-column-end</code>
+                </td>
+                <td>
+                  Definiert an welcher Spaltenlinie das Grid-Item endet.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>grid-column</code>
+                </td>
+                <td>
+                  Kurzschreibweise für <code>grid-column-start</code> und <code>grid-column-end</code>.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>grid-area</code>
+                </td>
+                <td>
+                  Kurzschreibweise für <code>grid-row-start</code>, <code>grid-column-start</code>,
+                  <code>grid-row-end</code> und <code>grid-column-end</code> oder für die Bennenung von Grid-Items.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>grid-template-areas</code>
+                </td>
+                <td>
+                  Definiert mithilfe der Bennenung von Grid-Items durch <code>grid-area</code> die position innerhalb
+                  des Grids.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>grid-auto-rows</code>
+                </td>
+                <td>
+                  Definiert die Höhe aller Zeilen, sofern diese keine andere vorgegebene Höhe besitzen.
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>auto</code></dt>
+                      <dd>Die Zeilenhöhe wird durch das größte Grid-Item in der Zeile bestimmt (Standardwert)</dd>
+                      <dt><code>max-content</code></dt>
+                      <dd>Die Zeilenhöhe jeder Zeile hängt von dem größten Grid-Item in der Zeile ab.</dd>
+                      <dt><code>min-content</code></dt>
+                      <dd>Die Zeilenhöhe jeder Zeile hängt von dem kleinsten Grid-Item in der Zeile ab.</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>grid-auto-columns</code>
+                </td>
+                <td>
+                  Definiert die Breite aller Spalten, sofern diese keine andere vorgegebene Breite besitzen.
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>auto</code></dt>
+                      <dd>Die Spaltenbreite hängt von der größe des Grid-Containers ab (Standart).</dd>
+
+                      <dt><code>max-content</code></dt>
+                      <dd>Die Spaltenbreite jeder Spalte hängt von dem größten Grid-Item in der Spalte ab.</dd>
+
+                      <dt><code>min-content</code></dt>
+                      <dd>Die Spaltenbreite jeder Spalte hängt von dem kleinsten Grid-Item in der Spalte ab.</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>grid-auto-flow</code>
+                </td>
+                <td>
+                  Definiert wie die automatische Positionierung der Grid-Items erfolgt.
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>row</code></dt>
+                      <dd>Die Zeilen werden mit den Grid-Items aufgefüllt (Standart).</dd>
+
+                      <dt><code>column</code></dt>
+                      <dd>Die Spalten werden mit den Grid-Items aufgefüllt.</dd>
+
+                      <dt><code>dense</code></dt>
+                      <dd>Die Grid-Items werden so platziert, dass Lücken geschlossen werden.</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>grid</code>
+                </td>
+                <td>
+                  Kurzschreibweise für <code>grid-template-rows</code>, <code>grid-template-columns</code>,<br>
+                  <code>grid-template-areas</code>, <code>grid-auto-rows</code>, <code>grid-auto-columns</code> und<br>
+                  <code>grid-auto-flow</code>.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>justify-content</code>
+                </td>
+                <td>
+                  Definiert wie das Grid innerhalb des Grid-Containers auf horizontaler Ebene ausgerichtet wird.
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>space-evenly</code></dt>
+                      <dd>Der Platz zwischen und um die einzelnen Spalten ist gleich.</dd>
+
+                      <dt><code>space-between</code></dt>
+                      <dd>Der Platz zwischen den Spalten ist gleich.</dd>
+
+                      <dt><code>space-around</code></dt>
+                      <dd>Der Platz um die Spalten ist gleich.</dd>
+
+                      <dt><code>center</code></dt>
+                      <dd>Richtet das Grid mittig des Containers aus.</dd>
+
+                      <dt><code>start</code></dt>
+                      <dd>Richtet das Grid am Anfang des Containers aus.</dd>
+
+                      <dt><code>end</code></dt>
+                      <dd>Richtett das Grid am Ende des Containers aus.</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>align-content</code>
+                </td>
+                <td>
+                  Definiert wie das Grid innerhalb des Grid-Containers auf vertikaler Ebene ausgerichtet wird.
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>space-evenly</code></dt>
+                      <dd>Der Platz zwischen und um die einzelnen Zeilen ist gleich.</dd>
+
+                      <dt><code>space-between</code></dt>
+                      <dd>Der Platz zwischen den Zeilen ist gleich.</dd>
+
+                      <dt><code>space-around</code></dt>
+                      <dd>Der Platz um die Zeilen ist gleich.</dd>
+
+                      <dt><code>center</code></dt>
+                      <dd>Richtet das Grid mittig des Containers aus.</dd>
+
+                      <dt><code>start</code></dt>
+                      <dd>Richtet das Grid am Anfang des Containers aus.</dd>
+
+                      <dt><code>end</code></dt>
+                      <dd>Richtett das Grid am Ende des Containers aus.</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>gap</code>,<br>
+                  <code>row-gap</code>,<br>
+                  <code>column-gap</code>
+                </td>
+                <td>
+                  Legt den Abstand zwischen Grid-Items fest. Der Abstand bezieht sich nur
+                  <strong>Sibling-Elemente</strong> und nicht auf den Rand des <strong>Parent-Elements.</strong>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!--Beispiele-->
+        <article class="examples">
+          <h3>Beispiele</h3>
+
+          <!-- Grid Example 1 -->
+          <a class="anchor" id="grid-part-grid-template-rows"></a>
+          <article class="example grid-example example-1">
+            <h4 class="example-headline">grid-template-rows</h4>
+            <p class="example-info"><code>grid-template-rows</code> beeinflusst in diesem Beispiel nur die Höhe der
+              Zeile und daher wird Item <strong>A</strong> mit einer Zeilenhöhe von <code>100px</code> belegt, alle
+              nachfolgenden Grid-Items werden
+              nicht beeinflusst.</p>
+            <div class="example-content">
+              <div class="grid-container">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .grid-container{
+      display: grid;
+      grid-template-rows: 100px;
+    }
+  &lt;/style&gt; 
+
+  &lt;div class=&quot;grid-container&quot;&gt;
+      &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+      &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+      &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article><!--grid-template-rows:-->
+
+          <!-- Grid Example 2 -->
+          <a class="anchor" id="grid-part-grid-template-columns"></a>
+          <article class="example grid-example example-2">
+            <h4 class="example-headline">grid-template-columns</h4>
+            <p class="example-info">Durch <code>grid-template-columns</code> werden in diesem Beispiel drei Spalten
+              erzeugt, welche sich den zur Verfügung stehenden Platz teilen.</p>
+            <div class="example-content">
+              <div class="grid-container">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+                <p class="grid-item">D</p>
+                <p class="grid-item">E</p>
+                <p class="grid-item">F</p>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .grid-container {                
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  &lt;/style&gt;                
+  &lt;div class=&quot;grid-container&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;D&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;E&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;F&lt;/p&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article><!--grid-template-columns:-->
+
+          <!-- Grid Example 3 -->
+          <a class="anchor" id="grid-part-grid-template"></a>
+          <article class="example grid-example example-3">
+            <h4 class="example-headline">grid-template</h4>
+            <p class="example-info"><code>grid-template</code> ist eine verkürzte Schreibweise von
+              <code>grid-template-rows</code> und <code>grid-template-columns</code>. In dem Beispiel bekommt die erste
+              Zeile eine Höhe von 100px und es werden zwei Spalten erzeugt.
+            </p>
+            <div class="example-content">
+              <div class="grid-container">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+                <p class="grid-item">D</p>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .grid-container {
+      display: grid;
+      grid-template: 100px / repeat(2, 1fr);
+    }
+  &lt;/style&gt;   
+                
+  &lt;div class=&quot;grid-container&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;D&lt;/p&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article><!--grid-template:-->
+
+          <!-- Grid Example 4 -->
+          <a class="anchor" id="grid-part-gap"></a>
+          <article class="example grid-example example-4">
+            <h4 class="example-headline">gap</h4>
+            <p class="example-info">Durch <code>gap</code> entsteht zwischen den Grid-Items eine Abstand von
+              <code>25px</code>.</p>
+            <div class="example-content">
+              <div class="grid-container">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+                <p class="grid-item">D</p>
+                <p class="grid-item">E</p>
+                <p class="grid-item">F</p>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .grid-container{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+  &lt;/style&gt;
+                
+  &lt;div class=&quot;grid-container&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;D&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;E&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;F&lt;/p&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article><!--gap:-->
+
+          <!-- Grid Example 5 -->
+          <a class="anchor" id="grid-part-grid-row-start-end"></a>
+          <article class="example grid-example example-5">
+            <h4 class="example-headline">grid-row-start / grid-row-end</h4>
+            <p class="example-info">Durch <code>grid-row-start</code> platziert sich das Item <strong>A</strong> an der
+              ersten
+              Zeilenlinie und durch <code>grid-row-end</code> erstreckt es sich bis zur dritten
+              Zeilenlinie.</p>
+            <div class="example-content">
+              <div class="grid-container">
+                <p class="grid-item" id="grid-itemA">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+                <p class="grid-item">D</p>
+                <p class="grid-item">E</p>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .grid-container{
+      display: grid;
+    }
+
+    .grid-item:first-of-type {
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+  &lt;/style&gt;            
+
+  &lt;div class=&quot;grid-container&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;D&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;E&lt;/p&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article><!--grid-row-start & end:-->
+
+          <!-- Grid Example 6 -->
+          <a class="anchor" id="grid-part-grid-row"></a>
+          <article class="example grid-example example-6">
+            <h4 class="example-headline">grid-row</h4>
+            <p class="example-info">Durch <code>grid-row</code> platziert sich das Item <strong>A</strong> an der ersten
+              Zeilenlinie und
+              erstreckt sich bis zur vierten Zeilenlinie.</p>
+            <div class="example-content">
+              <div class="grid-container">
+                <p class="grid-item" id="grid-itemA">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+                <p class="grid-item">D</p>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .grid-container {
+      display: grid;
+    }
+
+    .grid-item:first-of-type {
+      grid-row: 1/4;
+    }
+  &lt;/style&gt;
+
+  &lt;div class=&quot;grid-container&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;D&lt;/p&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article><!--grid-row:-->
+
+          <!-- Grid Example 7 -->
+          <a class="anchor" id="grid-part-grid-column-start-end"></a>
+          <article class="example grid-example example-7">
+            <h4 class="example-headline">grid-column-start / grid-column-end</h4>
+            <p class="example-info">Durch <code>grid-column-start</code> platziert sich das Item <strong>A</strong> an
+              der ersten
+              Spaltenlinie und durch <code>grid-column-end</code> erstreckt es sich bis zur dritten
+              Spaltenlinie.</p>
+            <div class="example-content">
+              <div class="grid-container">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+                <p class="grid-item">D</p>
+                <p class="grid-item">E</p>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .grid-container {
+      display: grid;
+    }
+
+    .grid-item:first-of-type {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  &lt;/style&gt;   
+
+  &lt;div class=&quot;grid-container&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;D&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;E&lt;/p&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article><!--grid-column-start & end-->
+
+          <!-- Grid Example 8 -->
+          <a class="anchor" id="grid-part-grid-column"></a>
+          <article class="example grid-example example-8">
+            <h4 class="example-headline">grid-column</h4>
+            <p class="example-info">Durch <code>grid-column</code> platziert sich das Item <strong>A</strong> an der
+              ersten Spaltenlinie
+              und erstreckt sich bis zur vierten Spaltenlinie.</p>
+            <div class="example-content">
+              <div class="grid-container">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+                <p class="grid-item">D</p>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .grid-container {
+      display: grid;
+    }
+
+    .grid-item:first-of-type {
+      grid-column: 1/4;
+    }
+  &lt;/style&gt;
+
+  &lt;div class=&quot;grid-container&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;D&lt;/p&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article><!--grid-column:-->
+
+          <!-- Grid Example 9 -->
+          <a class="anchor" id="grid-part-grid-area"></a>
+          <article class="example grid-example example-9">
+            <h4 class="example-headline">grid-area</h4>
+            <p class="example-info">Durch <code>grid-area</code> platziert sich das Item-A an der ersten Zeilen- und
+              Spaltenlinie und überspannt zwei Zeilen und drei Spalten.</p>
+            <div class="example-content">
+              <div class="grid-container">
+                <p class="grid-item" id="grid-itemA">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+                <p class="grid-item">D</p>
+                <p class="grid-item">E</p>
+                <p class="grid-item">F</p>
+                <p class="grid-item">G</p>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .grid-container {
+      display: grid;
+    }
+
+    .grid-item:first-of-type {
+      grid-area: 1/1 / span 2 / span 3
+    }
+  &lt;/style&gt; 
+                
+  &lt;div class=&quot;grid-container&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;D&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;E&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;F&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;G&lt;/p&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article><!--grid-area:-->
+
+          <!-- Grid Example 10 -->
+          <a class="anchor" id="grid-part-grid-template-areas"></a>
+          <article class="example grid-example example-10">
+            <h4 class="example-headline">grid-template-areas</h4>
+            <p class="example-info">Durch <code>grid-area</code> wurden den Grid-Items Namen zugewiesen und anschließend
+              mit <code>grid-template-areas</code> angeordnet.</p>
+            <div class="example-content">
+              <div class="grid-container">
+                <p class="grid-item" id="grid-itemA">A</p>
+                <p class="grid-item" id="grid-itemB">B</p>
+                <p class="grid-item" id="grid-itemC">C</p>
+                <p class="grid-item" id="grid-itemD">D</p>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .grid-container {
+      display: grid;
+      grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+      grid-template-areas: 'one two two''one three four';
+    }
+
+    .grid-item:nth-of-type(1) {
+      grid-area: one;
+    }
+
+    .grid-item:nth-of-type(2) {
+      grid-area: two;
+    }
+
+    .grid-item:nth-of-type(3) {
+      grid-area: three;
+    }
+
+    .grid-item:nth-of-type(4) {
+      grid-area: four;
+    }
+  &lt;/style&gt;                
+  &lt;div class=&quot;grid-container&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;D&lt;/p&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article><!--grid-template-areas:-->
+
+          <!-- Grid Example 11 -->
+          <a class="anchor" id="grid-part-grid-auto-rows"></a>
+          <article class="example grid-example example-11">
+            <h4 class="example-headline">grid-auto-rows</h4>
+            <p class="example-info">Durch <code>grid-auto-rows</code> bekommt das Item <strong>C</strong> eine Höhe von
+              <code>100px</code>
+              zugeschrieben, da die Zeile neu hinzugekommen ist.</p>
+            <div class="example-content">
+              <div class="grid-container">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .grid-container {
+      display: grid;
+      grid-template-rows: repeat(2, 1fr);
+      grid-auto-rows: 100px;
+    }
+  &lt;/style&gt;
+
+  &lt;div class=&quot;grid-container&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article><!--grid-auto-rows:-->
+
+          <!-- Grid Example 12 -->
+          <a class="anchor" id="grid-part-grid-auto-columns"></a>
+          <article class="example grid-example example-12">
+            <h4 class="example-headline">grid-auto-columns</h4>
+            <p class="example-info">Durch <code>grid-auto-columns</code> bekommt das Item <strong>C</strong> eine Breite
+              von <code>100px</code>
+              zugeschrieben, da die Spalte neu hinzugekommen ist.</p>
+            <div class="example-content">
+              <div class="grid-container">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .grid-container{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-auto-flow: column;
+      grid-auto-columns: 100px;
+    }
+  &lt;/style&gt;
+
+  &lt;div class=&quot;grid-container&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+  &lt;/div&gt;
+                    </code>
+            </div>
+          </article><!--grid-auto-columns:-->
+
+          <!-- Grid Example 13 -->
+          <a class="anchor" id="grid-part-grid-auto-flow"></a>
+          <article class="example grid-example example-13">
+            <h4 class="example-headline">grid-auto-flow</h4>
+            <p class="example-info">In den folgenden zwei Beispielen werden die Grid-Items mit Hilfe von
+              <code>grid-auto-flow: column;</code> und <code>grid-auto-flow: dense;</code> positioniert. Im ersten
+              Beispiel werden die Grid-Items als eine neue Spalte angehangen. Im zweiten Beispiel positioniert sich
+              Item <strong>D</strong> vor Item <strong>C</strong>, da sich Item <strong>C</strong> durch
+              <code>span</code> über zwei Spalten erstreckt und es in der ersten
+              Zeile keinen Platz dafür hat.
+            </p>
+            <div class="example-content">
+              <h5>column</h5>
+              <div class="grid-container1">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+              </div>
+              <h5>dense</h5>
+              <div class="grid-container2">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+                <p class="grid-item">D</p>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .grid-container1 {
+      display: grid;                
+      grid-auto-flow: column;
+    }
+
+    .grid-container2 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr) ;
+      grid-auto-flow: dense;
+    }
+
+    .grid-container2 p:nth-of-type(3) {
+      grid-column: auto / span 2;
+    }
+  &lt;/style&gt;  
+
+  &lt;div class=&quot;grid-container1&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-container2&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;D&lt;/p&gt;
+  &lt;/div&gt;
+                </code>
+            </div>
+          </article><!--grid-auto-flow:-->
+
+          <!-- Grid Example 14 -->
+          <a class="anchor" id="grid-part-justify-content"></a>
+          <article class="example grid-example example-14">
+            <h4 class="example-headline">justify-content</h4>
+            <p class="example-info">In den folgenden Beispielen werden die Grid-Items mit Hilfe von
+              <code>justify-content</code> auf der horizontalen Ebene positioniert.
+            </p>
+            <div class="example-content">
+              <h5>space-evenly</h5>
+              <div class="grid-container1">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+              </div>
+              <h5>space-between</h5>
+              <div class="grid-container2">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+              </div>
+              <h5>space-around</h5>
+              <div class="grid-container3">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+              </div>
+              <h5>center</h5>
+              <div class="grid-container4">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+              </div>
+              <h5>start</h5>
+              <div class="grid-container5">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+              </div>
+              <h5>end</h5>
+              <div class="grid-container6">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .grid-container1 {
+      display: grid;
+      grid-template-columns: repeat(3, 250px);
+      justify-content: space-evenly;
+    }
+
+    .grid-container2 {
+      display: grid;
+      grid-template-columns: repeat(3, 250px);
+      justify-content: space-between;
+    }
+
+    .grid-container3 {
+      display: grid;
+      grid-template-columns: repeat(3, 250px);
+      justify-content: space-around;
+    }
+
+    .grid-container4 {
+      display: grid;
+      grid-template-columns: repeat(3, 250px);
+      justify-content: center;
+    }
+
+    .grid-container5 {
+      display: grid;
+      grid-template-columns: repeat(3, 250px);
+      justify-content: start;
+    }
+
+    .grid-container6 {
+      display: grid;
+      grid-template-columns: repeat(3, 250px);
+      justify-content: end;
+    }
+  &lt;/style&gt;  
+
+  &lt;div class=&quot;grid-container1&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-container2&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-container3&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-container4&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-container5&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-container6&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article><!--justify content-->
+
+          <!-- Grid Example 15 -->
+          <a class="anchor" id="grid-part-align-content"></a>
+          <article class="example grid-example example-15">
+            <h4 class="example-headline">align-content</h4>
+            <p class="example-info">In den folgenden Beispielen werden die Grid-Items mit Hilfe von
+              <code>align-content</code> auf der vertikalen Ebene positioniert.
+            </p>
+            <div class="example-content">
+              <h5>space-evenly</h5>
+              <div class="grid-container1">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+              </div>
+              <h5>space-between</h5>
+              <div class="grid-container2">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+              </div>
+              <h5>space-around</h5>
+              <div class="grid-container3">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+              </div>
+              <h5>center</h5>
+              <div class="grid-container4">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+              </div>
+              <h5>start</h5>
+              <div class="grid-container5">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+              </div>
+              <h5>end</h5>
+              <div class="grid-container6">
+                <p class="grid-item">A</p>
+                <p class="grid-item">B</p>
+                <p class="grid-item">C</p>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .grid-container1 {
+      display: grid;
+      grid-template-rows: repeat(3, min-content);
+      align-content: space-evenly;
+    }
+
+    .grid-container2 {
+      display: grid;
+      grid-template-rows: repeat(3, min-content);
+      align-content: space-between;
+    }
+
+    .grid-container3 {
+      display: grid;
+      grid-template-rows: repeat(3, min-content);
+      align-content: space-aound;
+    }
+
+    .grid-container4 {
+      display: grid;
+      grid-template-rows: repeat(3, min-content);
+      align-content: center;
+    }
+
+    .grid-container5 {
+      display: grid;
+      grid-template-rows: repeat(3, min-content);
+      align-content: start;
+    }
+    
+    .grid-container6 {
+      display: grid;
+      grid-template-rows: repeat(3, min-content);
+      align-content: end;
+    }
+  &lt;/style&gt;    
+
+  &lt;div class=&quot;grid-container1&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-container2&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-container3&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-container4&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-container5&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;grid-container6&quot;&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;A&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;B&lt;/p&gt;
+    &lt;p class=&quot;grid-item&quot;&gt;C&lt;/p&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article><!--align-content:-->
+        </article>
+
+      </section>
+
+      <!-- Text-Styling mit CSS (Finja Moser) -->
+      <a class="anchor" id="text-part"></a>
+      <section>
+        <h2>Text-Styling mit CSS</h2>
+        <p class="editor">Bearbeitet durch Finja Moser</p>
+
+        <article>
+          <h3>Was versteht man unter Text-Styling?</h3>
+          <p>CSS bietet unterschiedlichste Möglichkeiten den angezeigten Text in nahezu sämtlichen Facetten anzupassen,
+            zu gestalten und zu formatieren, hierbei kann nicht nur die Schriftart, sondern auch Größe, Farbe und
+            sogar die Sichtbarkeit des Textes reguliert werden. Damit lassen sich allein auf Textebene viele
+            stilistische Effekte
+            erzielen.<br>
+            Auch für das Thema Barrierefreiheit spielt der Text einer Webseite eine große Rolle. So kann zum Beispiel
+            ein hohes Kontrastverhältnis
+            zwischen Text- und Hintergrundfarbe Menschen mit Sehbehinderung dabei helfen uneingeschränkt auf die Inhalte
+            einer Webseite zugreifen zu können.</p>
+        </article>
+
+        <article>
+          <h3>CSS-Eigenschaften</h3>
+
+          <table class="property-table">
+            <thead>
+              <tr>
+                <th>Eigenschaft</th>
+                <th>Beschreibung</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- color -->
+              <tr>
+                <td>
+                  <code>color</code>
+                </td>
+                <td>
+                  Anpassen der Textfarbe.
+                  <details>
+                    <summary>Möglichkeiten Farben zu definieren</summary>
+                    <ul>
+                      <li>Color-Keywords, z.B. red, blue</li>
+                      <li>RGB Werte als HEX, z.B. #FF0000</li>
+                      <li>RGB Funktion, z.B. rgb(255, 0, 0)</li>
+                      <li>RGBA Funktion, z.B. rgba(255, 0, 0, 0.5)</li>
+                      <li>HSL Funktion</li>
+                      <li>HSLA Funktion</li>
+                    </ul>
+                  </details>
+                </td>
+              </tr>
+              <!-- background-color -->
+              <tr>
+                <td>
+                  <code>background-color</code>
+                </td>
+                <td>
+                  Anpassen der Hintergrundfarbe.
+                </td>
+              </tr>
+              <!-- font-family -->
+              <tr>
+                <td>
+                  <code>font-family</code>
+                </td>
+                <td>
+                  Mit font-family kann die Schriftart ausgewählt werden.
+                  <details>
+                    <summary>Fonts</summary>
+                    <dl>
+                      <dt>Web-Safe Fonts</dt>
+                      <dd>Arial, "Courier New", Georgia, "Times New Roman", Verdana</dd>
+                      <dt>Default Fonts</dt>
+                      <dd>serif, sans-serif, monospace, cursive, fantasy</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <!-- font-size -->
+              <tr>
+                <td>
+                  <code>font-size</code>
+                </td>
+                <td>
+                  Anpassen der Textgröße.
+                  <details>
+                    <summary>Einheiten für Schriftgrößen</summary>
+                    <dl>
+                      <dt><code>px</code></dt>
+                      <dd>Pixel</dd>
+                      <dt><code>em</code></dt>
+                      <dd><code>1em</code> entspricht in den meisten Browsern <code>16px</code>.<br>Relativ zum
+                        <strong>Parent-Element</strong>.
+                      </dd>
+                      <dt><code>rem</code></dt>
+                      <dd>Wie <code>em</code>, aber relativ zum <strong>root-Element</strong> (<code>html</code>) der
+                        Webseite.</dd>
+                      <dt><code>ch</code></dt>
+                      <dd><code>1ch</code> entspricht der Breite der <code>0</code> in der jeweiligen Schriftart.</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <!-- font-style -->
+              <tr>
+                <td>
+                  <code>font-style</code>
+                </td>
+                <td>
+                  Legt den Stil der Schrift fest. Fett, kursiv oder normal.
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>normal</code></dt>
+                      <dd>normale Schrift, Standardwert</dd>
+
+                      <dt><code>italic</code></dt>
+                      <dd>lursive Variante der Schrift</dd>
+
+                      <dt><code>oblique</code></dt>
+                      <dd>normale Variante der Schrift, aber schräg gestellt</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <!-- font-weight -->
+              <tr>
+                <td>
+                  <code>font-weight</code>
+                </td>
+                <td>
+                  Regelt die Strichtstärke (Dicke) der Schrift.
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>normal</code></dt>
+                      <dd>normale Strichstärke (400), Standardwert</dd>
+
+                      <dt><code>lighter</code></dt>
+                      <dd>dünnste Strichstärke (100)</dd>
+
+                      <dt><code>light</code></dt>
+                      <dd>dünne Strichstärke (300)</dd>
+
+                      <dt><code>bold</code></dt>
+                      <dd>dicke Strichstärke (700)</dd>
+
+                      <dt><code>bolder</code></dt>
+                      <dd>dickste Strichstärke (900)</dd>
+
+                      <dt><code>100-900</code></dt>
+                      <dd>Strichstärke in 100er-Schritten.</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <!-- text-transform -->
+              <tr>
+                <td>
+                  <code>text-transform</code>
+                </td>
+                <td>
+                  Steuert die Groß- und Kleinschreibung von Text.
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>none</code></dt>
+                      <dd>keine Transformation, Standartwert</dd>
+                      <dt><code>uppercase</code></dt>
+                      <dd>Großschreiben aller Buchstaben</dd>
+                      <dt><code>lowercase</code></dt>
+                      <dd>Kleinschreiben aller Buchstaben</dd>
+                      <dt><code>capitalize</code></dt>
+                      <dd>Großschreiben des ersten Buchstaben eines jeden Wortes</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <!-- text-decoration -->
+              <tr>
+                <td>
+                  <code>text-decoration</code>
+                </td>
+                <td>
+                  Regelt welche Dekorationslinien ein Text erhält.
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>overline</code></dt>
+                      <dd>Linie über dem Text</dd>
+
+                      <dt><code>underline</code></dt>
+                      <dd>Unterstreichen des Textes</dd>
+
+                      <dt><code>line-through</code></dt>
+                      <dd>Text durchstreichen</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <!-- text-shadow -->
+              <tr>
+                <td>
+                  <code>text-shadow</code>
+                </td>
+                <td>
+                  Text mit Schatten versehen. Für einen Textschatten, müssen <strong>4 Werte</strong> angegeben werden:
+                  <code>x-Offset</code> <code>y-Offset</code> <code>Blur-Radius</code> <code>Basis-Farbe</code>
+                </td>
+              </tr>
+              <!-- text-align -->
+              <tr>
+                <td>
+                  <code>text-align</code>
+                </td>
+                <td>
+                  Bestimmt die Ausrichtung des Textes.
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>center</code></dt>
+                      <dd>Zentriert den Text</dd>
+
+                      <dt><code>justify</code></dt>
+                      <dd>Streckt alle Zeilen eine Textes auf die gleiche Breite</dd>
+
+                      <dt><code>left</code></dt>
+                      <dd>Stellt den Text nach links</dd>
+
+                      <dt><code>right</code></dt>
+                      <dd>Stellt den Text nach rechts</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <!-- text-indentation -->
+              <tr>
+                <td>
+                  <code>text-indent</code>
+                </td>
+                <td>
+                  Einrücken der ersten Zeile eines Textes.
+                </td>
+              </tr>
+              <!-- letter-spacing -->
+              <tr>
+                <td>
+                  <code>letter-spacing</code>
+                </td>
+                <td>
+                  Der Abstand zwischen den Zeichen eines Textes.
+                </td>
+              </tr>
+              <!-- line-height -->
+              <tr>
+                <td>
+                  <code>line-height</code>
+                </td>
+                <td>
+                  Der Abstand zwischen den Zeilem eines Textes.
+                </td>
+              </tr>
+              <!-- Text direction -->
+              <tr>
+                <td>
+                  <code>direction</code>
+                </td>
+                <td>
+                  Die Richtung des Textes wird so bestimmt. Dass der Text von der linken zur rechten Seite abgebildet
+                  wird, ist der <strong>Standardwert</strong>, doch mit <code>rtl</code> wird der Text von der rechten
+                  Seite zu der
+                  linken abgebildet, z.B. für den arabischen Raum.
+                </td>
+              </tr>
+              <!-- word-spacing -->
+              <tr>
+                <td>
+                  <code>word-spacing</code>
+                </td>
+                <td>
+                  Der Abstand zwischen den Wörtern eines Textes.
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </article>
+        <!-- Beispiele -->
+        <article class="examples">
+          <h3>Beispiele</h3>
+          <!-- Text Example 1 -->
+          <a class="anchor" id="text-part-color"></a>
+          <article class="example text-example example-1">
+            <h4 class="example-headline">color</h4>
+            <p class="example-info">
+              In diesem Beispiel hat der Text die neue Farbe rot bekommen.
+            </p>
+            <div class="example-content">
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;  
+    p {
+      color: red;
+    }
+  &lt;/style&gt;
+
+  &lt;p&gt;Lorem ipsum&lt;/p&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Text Example 2 -->
+          <a class="anchor" id="text-part-background-color"></a>
+          <article class="example text-example example-2">
+            <h4 class="example-headline">background-color</h4>
+            <p class="example-info">
+              In diesem Beispiel hat der Hintergrund eine blaue Farbe, der Text ist weiß.
+            </p>
+            <div class="example-content">
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;  
+    p {
+      color: white;
+      background-color: blue;
+    }
+  &lt;/style&gt;
+
+  &lt;p&gt;Lorem ipsum&lt;/p&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Text Example 3 -->
+          <a class="anchor" id="text-part-font-family"></a>
+          <article class="example text-example example-3">
+            <h4 class="example-headline">font-family</h4>
+            <p class="example-info">
+              In diesem Beispiel hat der erste Absatz die web-sichere Schriftart <strong>Arial</strong> bekommen,
+              der zweite Absatz eine dem System zur Verfügung stehende <strong>Serifen-Schrift</strong>.
+            </p>
+            <div class="example-content">
+              <p>1. Lorem ipsum</p>
+              <p>2. Lorem ipsum</p>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;  
+    p {
+      font-family: Arial;
+    }
+    p:last-of-type {
+      font-family: serif;
+    }
+  &lt;/style&gt;
+
+  &lt;p&gt;1. Lorem ipsum&lt;/p&gt;
+  &lt;p&gt;2. Lorem ipsum&lt;/p&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Text Example 4 -->
+          <a class="anchor" id="text-part-font-size"></a>
+          <article class="example text-example example-4">
+            <h4 class="example-headline">font-size</h4>
+            <p class="example-info">
+              In diesem Beispiel hat der Text eine Größe von <code>1.5em</code> bekommen.
+            </p>
+            <div class="example-content">
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;  
+    p {
+      font-size: 1.5em;
+    }
+  &lt;/style&gt;
+
+  &lt;p&gt;Lorem ipsum&lt;/p&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Text Example 5 -->
+          <a class="anchor" id="text-part-font-style"></a>
+          <article class="example text-example example-5">
+            <h4 class="example-headline">font-style</h4>
+            <p class="example-info">
+              Dieses Beispiel verdeutlicht die Werte von <code>font-style</code>.
+            </p>
+            <div class="example-content">
+              <p>1. Lorem ipsum</p>
+              <p>2. Lorem ipsum</p>
+              <p>3. Lorem ipsum</p>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;  
+    p {
+      font-style: normal;
+    }
+    p:nth-of-type(2) {
+      font-style: italic;
+    }
+    p:nth-of-type(3) {
+      font-style: oblique;
+    }
+  &lt;/style&gt;
+
+  &lt;p&gt;1. Lorem ipsum&lt;/p&gt;
+  &lt;p&gt;2. Lorem ipsum&lt;/p&gt;
+  &lt;p&gt;3. Lorem ipsum&lt;/p&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Text Example 6 -->
+          <a class="anchor" id="text-part-font-weight"></a>
+          <article class="example text-example example-6">
+            <h4 class="example-headline">font-weight</h4>
+            <p class="example-info">
+              Dieses Beispiel zeigt die verschiedenen Strichstärken (Dicken) eines Textes.
+            </p>
+            <div class="example-content">
+              <p>1. Lorem ipsum</p>
+              <p>2. Lorem ipsum</p>
+              <p>3. Lorem ipsum</p>
+              <p>4. Lorem ipsum</p>
+              <p>5. Lorem ipsum</p>
+              <p>6. Lorem ipsum</p>
+              <p>7. Lorem ipsum</p>
+              <p>8. Lorem ipsum</p>
+              <p>9. Lorem ipsum</p>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;  
+    p:nth-of-type(1) {
+      font-weight: lighter;
+    }
+    p:nth-of-type(2) {
+      font-weight: 200;
+    }
+    p:nth-of-type(3) {
+      font-weight: 300;
+    }
+    p:nth-of-type(4) {
+      font-weight: normal;
+    }
+    p:nth-of-type(5) {
+      font-weight: 500;
+    }
+    p:nth-of-type(6) {
+      font-weight: 600;
+    }
+    p:nth-of-type(7) {
+      font-weight: bold;
+    }
+    p:nth-of-type(8) {
+      font-weight: 800;
+    }
+    p:nth-of-type(9) {
+      font-weight: 900;
+    }
+  &lt;/style&gt;
+
+  &lt;p&gt;1. Lorem ipsum&lt;/p&gt;
+  &lt;p&gt;2. Lorem ipsum&lt;/p&gt;
+  &lt;p&gt;3. Lorem ipsum&lt;/p&gt;
+  &lt;p&gt;4. Lorem ipsum&lt;/p&gt;
+  &lt;p&gt;5. Lorem ipsum&lt;/p&gt;
+  &lt;p&gt;6. Lorem ipsum&lt;/p&gt;
+  &lt;p&gt;7. Lorem ipsum&lt;/p&gt;
+  &lt;p&gt;8. Lorem ipsum&lt;/p&gt;
+  &lt;p&gt;9. Lorem ipsum&lt;/p&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Text Example 7 -->
+          <a class="anchor" id="text-part-text-transformation"></a>
+          <article class="example text-example example-7">
+            <h4 class="example-headline">text-transformation</h4>
+            <p class="example-info">
+              Alle Möglichkeiten zur Transformation des Textes werden in diesem Beispiel dargestellt.
+            </p>
+            <div class="example-content">
+              <p>1. Lorem ipsum</p>
+              <p>2. Lorem ipsum</p>
+              <p>3. Lorem ipsum</p>
+              <p>4. Lorem ipsum</p>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;  
+    p:nth-of-type(1) {
+      text-transform: none;
+    }
+    p:nth-of-type(2) {
+      text-transform: uppercase;
+    }
+    p:nth-of-type(3) {
+      text-transform: lowercase;
+    }
+    p:nth-of-type(4) {
+      font-weight: capitalize;
+    }
+  &lt;/style&gt;
+
+  &lt;p&gt;1. Lorem ipsum&lt;/p&gt;
+  &lt;p&gt;2. Lorem ipsum&lt;/p&gt;
+  &lt;p&gt;3. Lorem ipsum&lt;/p&gt;
+  &lt;p&gt;4. Lorem ipsum&lt;/p&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Text Example 8 -->
+          <a class="anchor" id="text-part-text-decoration"></a>
+          <article class="example text-example example-8">
+            <h4 class="example-headline">text-decoration</h4>
+            <p class="example-info">
+              In diesem Beispiel wird Text mit verschiedenen Dekorationslinien dargestellt.
+            </p>
+            <div class="example-content">
+              <p>1. Lorem ipsum</p>
+              <p>2. Lorem ipsum</p>
+              <p>3. Lorem ipsum</p>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;  
+    p:nth-of-type(1) {
+      text-decoration: overline;
+    }
+    p:nth-of-type(2) {
+      text-decoration: underline;
+    }
+    p:nth-of-type(3) {
+      text-decoration: line-through;
+    }              
+  &lt;/style&gt;
+
+  &lt;p&gt;1. Lorem ipsum&lt;/p&gt;
+  &lt;p&gt;2. Lorem ipsum&lt;/p&gt;
+  &lt;p&gt;3. Lorem ipsum&lt;/p&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Text Example 9-->
+          <a class="anchor" id="text-part-text-shadow"></a>
+          <article class="example text-example example-9">
+            <h4 class="example-headline">text-shadow</h4>
+            <p class="example-info">
+              Dieses Beispiel zeigt Text mit Schattierung.
+            </p>
+            <div class="example-content">
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;  
+    p {
+      text-shadow: 2px 2px 3px red;
+    }
+  &lt;/style&gt;
+
+  &lt;p&gt;Lorem ipsum&lt;/p&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Text Example 10 -->
+          <a class="anchor" id="text-part-text-align"></a>
+          <article class="example text-example example-10">
+            <h4 class="example-headline">text-align</h4>
+            <p class="example-info">
+              In diesem Beispiel werden die verschieden Textausrichtungen verdeutlicht.
+            </p>
+            <div class="example-content">
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae quod, harum dolorem saepe officia rerum
+                magnam officiis deserunt iste nihil, error labore earum sunt, odit voluptatem accusantium atque vero
+                sequi!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ab tempore aliquid laudantium eos
+                inventore. Cupiditate aspernatur inventore quod architecto officiis facere cumque consequuntur,
+                necessitatibus temporibus, nihil tenetur at? Voluptates.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque sed provident tempore odit laudantium
+                similique. Sint, at atque amet aperiam nulla doloribus libero? Asperiores laborum consectetur error
+                atque excepturi omnis?</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur esse iusto hic, autem quasi sequi
+                molestias illo itaque delectus sit quia enim, veritatis laudantium neque. Repudiandae fugit quam aliquid
+                autem.</p>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;  
+    p:nth-of-type(1) {
+      text-align: center;
+    }
+    p:nth-of-type(2) {
+      text-align: justify;
+    }
+    p:nth-of-type(3) {
+      text-align: left;
+    }
+    p:nth-of-type(4) {
+      text-align: right;
+    }
+  &lt;/style&gt;
+
+  &lt;p&gt;Lorem ipsum...&lt;/p&gt;
+  &lt;p&gt;Lorem ipsum...&lt;/p&gt;
+  &lt;p&gt;Lorem ipsum...&lt;/p&gt;
+  &lt;p&gt;Lorem ipsum...&lt;/p&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Text Example 11 -->
+          <a class="anchor" id="text-part-text-ident"></a>
+          <article class="example text-example example-11">
+            <h4 class="example-headline">text-indent</h4>
+            <p class="example-info">
+              In diesem Beispiel wurde der Beginn des Textes um <code>25%</code> eingerückt.
+            </p>
+            <div class="example-content">
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;  
+    p {
+      text-indent:25%;
+    }
+  &lt;/style&gt;
+
+  &lt;p&gt;Lorem ipsum...&lt;/p&gt;
+            </code>
+            </div>
+          </article>
+
+          <!-- Text Example 12 -->
+          <a class="anchor" id="text-part-letter-spacing"></a>
+          <article class="example text-example example-12">
+            <h4 class="example-headline">letter-spacing</h4>
+            <p class="example-info">
+              In diesem Beispiel wurde der Abstand der Zeichen im Text auf <code>0.5em</code> gesetzt.
+            </p>
+            <div class="example-content">
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;  
+    p {
+      letter-spacing: 0.5em;
+    }
+  &lt;/style&gt;
+
+  &lt;p&gt;Lorem ipsum&lt;/p&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Text Example 13 -->
+          <a class="anchor" id="text-part-line-height"></a>
+          <article class="example text-example example-13">
+            <h4 class="example-headline">line-height</h4>
+            <p class="example-info">
+              In diesem Beispiel wurde der Abstand der Zeilen im Text auf <code>2em</code> gesetzt.
+            </p>
+            <div class="example-content">
+              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et
+                ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum
+                dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+                clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+              </p>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;  
+    p {
+      line-height: 3em;
+    }
+  &lt;/style&gt;
+
+  &lt;p&gt;Lorem ipsum...&lt;/p&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Text Example 14 -->
+          <a class="anchor" id="text-part-direction"></a>
+          <article class="example text-example example-14">
+            <h4 class="example-headline">direction</h4>
+            <p class="example-info">
+              Hier wird der Text von rechts nach links abgebildet.
+            </p>
+            <div class="example-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, ipsa. Animi, adipisci? Dolore labore,
+                praesentium deserunt nostrum exercitationem inventore eveniet illum debitis, officiis odio quas expedita
+                quo dolorum ratione libero.</p>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;  
+    p {
+      direction: rtl;
+    }
+  &lt;/style&gt;
+
+  &lt;p&gt;Lorem ipsum...&lt;/p&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Text Example 15 -->
+          <a class="anchor" id="text-part-word-spacing"></a>
+          <article class="example text-example example-15">
+            <h4 class="example-headline">word-spacing</h4>
+            <p class="example-info">
+              Der Abstand zwischen den Wörtern eines Textes wird hier auf <code>2em</code> festgelegt.
+            </p>
+            <div class="example-content">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga delectus nulla sequi quis minima cum
+                provident eius. Corporis fuga adipisci asperiores, sunt, dignissimos deserunt nobis vitae maxime
+                provident delectus facilis!</p>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;  
+    p {
+      word-spacing: 2em;
+    }
+  &lt;/style&gt;
+
+  &lt;p&gt;Lorem ipsum...&lt;/p&gt;
+              </code>
+            </div>
+          </article>
+        </article>
+      </section>
+
+      <!-- CSS position-Eigenschaft (Onur Tatli) -->
+      <a class="anchor" id="position-part"></a>
+      <section>
+        <h2>CSS position-Eigenschaft</h2>
+        <p class="editor">Bearbeitet durch Onur Tatli</p>
+
+        <article>
+          <h3>Was ist die CSS position-Eigenschaft?</h3>
+          <p>Die Eigenschaft <code>position</code> löst Elemente
+            aus dem normalen Elementfluss. Dadurch können sie an jede beliebige
+            Stelle (auch außerhalb) des Viewports positioniert werden.</p>
+        </article>
+
+        <article>
+          <h3>CSS-Eigenschaften</h3>
+          <!-- Tabelle nach diesem Schema mit allen Eigenschaften die ihr vorstellen wollt (am besten alle) -->
+          <table class="property-table">
+            <thead>
+              <tr>
+                <th>Eigenschaft</th>
+                <th>Beschreibung</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Position Static -->
+              <tr>
+                <td>
+                  <code>position: static;</code>
+                </td>
+                <td>
+                  Element verbleibt im Elementfluss. Dies ist der <strong>Standardwert</strong>.
+                </td>
+              </tr>
+              <!-- Position Relative -->
+              <tr>
+                <td>
+                  <code>position: relative;</code>
+                </td>
+                <td>
+                  Element verbleibt im Elementfluss, kann aber mit den Eigenschaften <code>left</code>,
+                  <code>right</code>, <code>top</code> und <code>bottom</code> positioniert werden. Der Platz, den das
+                  Element einnimmt, ist der gleiche wie bei <code>static</code>.
+                </td>
+              </tr>
+              <!-- Position absolute-->
+              <tr>
+                <td>
+                  <code>position: absolute;</code>
+                </td>
+                <td>
+                  Das Element wird vom Elementfluss losgelöst und nimmt keinen Platz im Seitenlayout ein. Es wird
+                  relativ zum nächsten positionierten <strong>Ancestor-Element</strong> mit den Eigenschaften
+                  <code>left</code>, <code>right</code>, <code>top</code> und <code>bottom</code> positioniert.
+                </td>
+              </tr>
+              <!-- Position Fixed -->
+              <tr>
+                <td>
+                  <code>position: fixed;</code>
+                </td>
+                <td>
+                  Element wird aus Elementfluss entfernt und nimmt keinen Platz im Seitenlayout ein. Es wird dann
+                  relativ zum Viewport ausgerichtet und kann mit den Eigenschaften <code>left</code>,
+                  <code>right</code>, <code>top</code> und <code>bottom</code> positioniert werden. Das Element wird
+                  nicht vom Scrollen beeinflusst.<br>
+                </td>
+              </tr>
+              <!-- Position Sticky -->
+              <tr>
+                <td>
+                  <code>position: sticky;</code>
+                </td>
+                <td>
+                  Behält Position im Elementfluss, bis das obere oder untere Ende des nächsten scrollbaren
+                  <strong>Ancestor-Elements</strong> erreicht ist und verschiebt sich dann relativ dazu.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+        <!-- Beispiele -->
+        <article class="examples">
+          <h3>Beispiele</h3>
+
+          <!-- Position Example 1 -->
+          <a class="anchor" id="position-part-static"></a>
+          <article class="example position-example example-1">
+            <h4 class="example-headline">position: static;</h4>
+            <p class="example-info">
+              In diesem Beispiel hat <code>position: static;</code> <strong>keinen</strong> Effekt auf die Position des
+              Elements <strong>B</strong>.
+            </p>
+            <div class="example-content">
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .position-static-example > div:nth-of-type(2) {
+      position: static;
+    }
+  &lt;/style&gt;
+
+  &lt;div class=&quot;position-static-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Position Example 2 -->
+          <a class="anchor" id="position-part-relative"></a>
+          <article class="example position-example example-2">
+            <h4 class="example-headline">position: relative;</h4>
+            <p class="example-info">
+              In diesem Beispiel hat <code>position: relative;</code> einen Effekt auf die Position des Elements
+              <strong>B</strong>.
+            </p>
+            <div class="example-content">
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .position-relative-example > div:nth-of-type(2) {
+      position: relative;
+      top: -20px;
+    }
+  &lt;/style&gt;
+
+  &lt;div class=&quot;position-relative-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Position Example 3 -->
+          <a class="anchor" id="position-part-absolute"></a>
+          <article class="example position-example example-3">
+            <h4 class="example-headline">position: absolute;</h4>
+            <p class="example-info">
+              In diesem Beispiel ist das Element <strong>B</strong> mit <code>position: absolute;</code> absolut zu
+              seinem relativ positionierten <strong>Parent-Element</strong> platziert. Das Element nimmt keinen Platz im
+              Layout ein.
+            </p>
+            <div class="example-content">
+              <div>
+                <div>A</div>
+                <div>B</div>
+                <div>C</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .position-absolute-example {
+      position: relative;
+    }
+
+    .position-absolute-example > div:nth-of-type(2) {
+      position: absolute;
+      left: 100px;
+      bottom: -30px;
+    }
+  &lt;/style&gt;
+
+  &lt;div class=&quot;position-absolute-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+  &lt;/div&gt;          
+              </code>
+            </div>
+          </article>
+
+          <!-- Position Example 4 -->
+          <a class="anchor" id="position-part-fixed"></a>
+          <article class="example position-example example-4">
+            <h4 class="example-headline">position: fixed;</h4>
+            <p class="example-info">
+              In diesem Beispiel kann Element <strong>A</strong> mit einem Klick auf "Element fixieren" am unteren
+              linken Rand des Viewports fixiert werden.
+            </p>
+            <input type="checkbox" id="fix-example-4" title="Element fixieren">
+            <div class="example-content">
+              <div>A</div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .position-fixed-example {
+      position: fixed;
+      left: 10px;
+      bottom: 10px;
+    }
+  &lt;/style&gt;
+      
+  &lt;div class=&quot;position-fixed-example&quot;&gt;A&lt;/div&gt;          
+              </code>
+            </div>
+          </article>
+
+          <!-- Position Example 5 -->
+          <a class="anchor" id="position-part-sticky"></a>
+          <article class="example position-example example-5">
+            <h4 class="example-headline">position: sticky;</h4>
+            <p class="example-info">
+              In diesem Beispiel hat Element <strong>A</strong> die Eigenschaft <code>position: sticky</code>. Somit
+              bleibt dann
+              das Element oben oder unten am Bildschirm "Kleben".
+            </p>
+            <div class="example-content">
+              <div>
+                <h5>Lorem Ipsum</h5>
+                <div>A</div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+                  interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
+                  ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante
+                  ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut
+                  hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero
+                  sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer
+                  fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris
+                  quis diam velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla
+                  et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas
+                  nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+                  Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus
+                  interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In
+                  at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida
+                  venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras
+                  ac leo purus. Mauris quis diam velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula
+                  venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus
+                  vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent
+                  convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper
+                  ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget
+                  tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh
+                  tempor porta. Cras ac leo purus. Mauris quis diam velit. Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae
+                  scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae
+                  massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis
+                  in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum
+                  nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis.
+                  Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed
+                  dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas
+                  odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget,
+                  auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare
+                  eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc
+                  sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet
+                  sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non
+                  fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit. Lorem
+                  ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+                  lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec
+                  congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula,
+                  facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus
+                  congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis
+                  imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue
+                  eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum
+                  interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est,
+                  ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante
+                  ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut
+                  hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero
+                  sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer
+                  fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris
+                  quis diam velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla
+                  et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas
+                  nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.
+                </div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .position-sticky-example {
+      position: sticky;
+    }
+  &lt;/style&gt;
+          
+  &lt;div class=&quot;position-sticky-example&quot;&gt;A&lt;/div&gt;          
+              </code>
+            </div>
+          </article>
+        </article>
+      </section>
+
+      <!-- Animationen mit CSS (Timm Lüders)-->
+      <a class="anchor" id="animation-part"></a>
+      <section>
+        <h2>Animationen mit CSS</h2>
+        <p class="editor">Bearbeitet durch Timm Lüders</p>
+        <article>
+          <h3>Was sind Animationen mit CSS?</h3>
+          <p>
+            Mit Hilfe von Animationen können selektierte Elemente fließend von einem Style in einen anderen übergehen.
+            Dabei ist die Anzahl der zu animierenden Eigenschaften und die Anzahl der Wiederholungen unbegrenzt.
+            Um CSS-Animationen nutzen zu können, müssen sogenannte <code>@keyframes</code> erstellt werden.
+          </p>
+        </article>
+        <article>
+          <h3>CSS-Eigenschaften</h3>
+          <table class="property-table">
+            <thead>
+              <tr>
+                <th>Eigenschaft</th>
+                <th>Beschreibung</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <code>animation-name</code>
+                </td>
+                <td>Definiert den Namen der Animation. Siehe <code>@keyframes</code></td>
+              </tr>
+              <tr>
+                <td>
+                  <code>animation-duration</code>
+                </td>
+                <td>
+                  Zeit die für die Animation benötigt wird um einen Zyklus
+                  abzuschließen.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>animation-timing-function</code>
+                </td>
+                <td>
+                  Gibt den Geschwindigkeitsverlauf für die Animation an.<br />
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>ease</code></dt>
+                      <dd>
+                        Die Geschwindigkeit zur Mitte der Animation nimmt zu
+                        und wird am Ende wieder langsamer.
+                      </dd>
+                      <dt><code>linear</code></dt>
+                      <dd>Animiert mit gleichmäßiger Geschwindigkeit.</dd>
+                      <dt><code>ease-in</code></dt>
+                      <dd>
+                        Beginnt langsam, wobei die Geschwindigkeit des
+                        Übergangs der Animationseigenschaft bis zum Abschluss
+                        zunimmt.
+                      </dd>
+                      <dt><code>ease-out</code></dt>
+                      <dd>
+                        Startet schnell, verlangsamt die Animation zum
+                        Abschluss.
+                      </dd>
+                      <dt><code>cubic-bezier()</code></dt>
+                      <dd>
+                        Definiert eine Bézierkurve, bestehend aus vier Punkten P0, P2, P2 und P3. P0 und P3 sind Anfang
+                        und Ende der Kurve.
+                      </dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>animation-delay</code>
+                </td>
+                <td>
+                  Zeit zwischen dem Laden des Elements und dem Start der
+                  Animation.<br />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>animation-direction</code>
+                </td>
+                <td>
+                  Richtung der Animation.
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>normal (Standard)</code></dt>
+                      <dd>Die Animation läuft vorwärts ab.</dd>
+                      <dt><code>reverse</code></dt>
+                      <dd>Die Animation läuft rückwärts ab.</dd>
+                      <dt><code>alternate</code></dt>
+                      <dd>
+                        Die Animation wechselt bei jedem Zyklus zwischen
+                        <code>normal</code> und <code>reverse</code>. Begonnen
+                        wird mit <code>normal</code>
+                      </dd>
+                      <dt><code>alternate-reverse</code></dt>
+                      <dd>
+                        Die Animation wechselt bei jedem Zyklus zwischen
+                        <code>normal</code> und <code>reverse</code>. Begonnen
+                        wird mit <code>reverse</code>
+                      </dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>animation-iteration-count</code>
+                </td>
+                <td>
+                  Anzahl der Animationswiederholungen.<br />
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>infinite (Standard)</code></dt>
+                      <dd>Animation wird unendlich oft wiederholt</dd>
+                      <dt><strong>n</strong></dt>
+                      <dd><strong>n</strong> steht für die Anzahl der Wiederholungen</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>animation-fill-mode</code>
+                </td>
+                <td>
+                  Definiert den Zustand einer Animation nach deren Ablauf.<br />
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>none (Standard)</code></dt>
+                      <dd>
+                        Die Animation wendet keine Style an. Das Element wird
+                        stattdessen mit allen anderen darauf angewendeten
+                        CSS-Regeln angezeigt.
+                      </dd>
+                      <dt><code>forwards</code></dt>
+                      <dd>Nimmt den Endzustand der Animation an.</dd>
+                      <dt><code>backwards</code></dt>
+                      <dd>
+                        Springt zurück auf den Ausgangszustand vor der
+                        Animation.
+                      </dd>
+                      <dt><code>both</code></dt>
+                      <dd>
+                        Die Animation folgt den Regeln sowohl für vorwärts als
+                        auch für rückwärts.
+                      </dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>animation-play-state</code>
+                </td>
+                <td>
+                  Legt fest ob eine Animation abläuft oder pausiert ist.
+                  <details>
+                    <summary>Werte</summary>
+                    <dl>
+                      <dt><code>running (Standard)</code></dt>
+                      <dd>
+                        Die Animation wird abgespielt.
+                      </dd>
+                      <dt><code>paused</code></dt>
+                      <dd>Die Animation ist pausiert.</dd>
+                    </dl>
+                  </details>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code>@keyframes</code>
+                </td>
+                <td>
+                  Definiert eine neue Animationssequenz unter dem angegebenen Namen.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+
+        <!-- Beispiele -->
+        <article class="examples">
+          <h3>Beispiele</h3>
+
+          <!-- Animation Example 1 -->
+          <a class="anchor" id="animation-part-animation-duration"></a>
+          <article class="example animation-example example-1">
+            <h4 class="example-headline">animation-duration</h4>
+            <p class="example-info">
+              Das folgende Beispiel zeigt zwei Boxen mit gleicher Animation.<br>
+              Bei Box <strong>A</strong> beträgt die Animationsdauer 2000ms, bei Box <strong>B</strong>
+              5000ms.
+            </p>
+            <div class="example-content">
+              <div>
+                <div class="square">A</div>
+              </div>
+              <hr>
+              <div>
+                <div class="square">B</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .animation-duration-example  {
+      position: relative; 
+    }
+
+    .animation-duration-example > div {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      animation-name: square;
+      animation-timing-function: ease;
+    }
+
+    .animation-duration-example > div:nth-of-type(1) {
+      animation-duration: 2000ms;
+    }
+
+    .animation-duration-example > div:nth-of-type(2) {
+      animation-duration: 5000ms;
+    }
+            
+    @keyframes square {
+      from {
+        left: 0;
+      }
+      to {
+        left: calc(100% - 100px);
+      }
+    }
+  &lt;/style&gt;
+            
+  &lt;div class=&quot;animation-duration-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Animation Example 2 -->
+          <a class="anchor" id="animation-part-animation-timing-function"></a>
+          <article class="example animation-example example-2">
+            <h4 class="example-headline">animation-timing-function</h4>
+            <p class="example-info">
+              Das folgende Beispiel zeigt fünf Boxen mit gleicher Animation aber unterschiedlicher
+              <code>animation-timing-function</code>.
+            </p>
+            <div class="example-content">
+              <h5>ease</h5>
+              <div>
+                <div class="square">A</div>
+              </div>
+              <h5>linear</h5>
+              <div>
+                <div class="square">B</div>
+              </div>
+              <h5>ease-in</h5>
+              <div>
+                <div class="square">C</div>
+              </div>
+              <h5>ease-out</h5>
+              <div>
+                <div class="square">D</div>
+              </div>
+              <h5>cubic-bezier(0,1.16,.78,-0.91)</h5>
+              <div>
+                <div class="square">E</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;  
+    .animation-timing-function-example {
+      position: relative; 
+    }
+    
+    .animation-timing-function-example > div {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      animation-name: square;
+      animation-duration: 3000ms; 
+    }
+    
+    .animation-timing-function-example > div:nth-of-type(1) {
+      animation-timing-function: ease;
+    }
+    
+    .animation-timing-function-example > div:nth-of-type(2) {
+      animation-timing-function: linear;
+    }
+
+    .animation-timing-function-example > div:nth-of-type(3) {
+      animation-timing-function: ease-in;
+    }
+
+    .animation-timing-function-example > div:nth-of-type(4) {
+      animation-timing-function: ease-out;
+    }
+
+    .animation-timing-function-example > div:nth-of-type(5) {
+      animation-timing-function: cubic-bezier(0,1.16,.78,-0.91);
+    }        
+
+    @keyframes square {
+      from {
+        left: 0;
+      }
+      to {
+        left: calc(100% - 100px);
+      }
+    }
+  &lt;/style&gt;
+
+  &lt;div class=&quot;animation-timing-function-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+    &lt;div&gt;D&lt;/div&gt;
+    &lt;div&gt;E&lt;/div&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Animation Example 3 -->
+          <a class="anchor" id="animation-part-animation-delay"></a>
+          <article class="example animation-example example-3">
+            <h4 class="example-headline">animation-delay</h4>
+            <p class="example-info">
+              Das folgende Beispiel zeigt zwei Boxen mit gleicher Animation.
+              Bei Box <strong>A</strong> ist keine Verzögerung definiert, Box <strong>B</strong>
+              hat eine Verzögerung von 5000ms.
+            </p>
+            <input type="checkbox" title="Animation starten/stoppen" id="play-example-3">
+            <div class="example-content">
+              <div>
+                <div class="square">A</div>
+              </div>
+              <hr>
+              <div>
+                <div class="square">B</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .animation-delay-example {
+      position: relative; 
+    }
+  
+    .animation-delay-example > div {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      animation-name: square;
+      animation-timing-function: ease;
+      animation-duration: 3000ms;  
+    }
+  
+    .animation-delay-example > div:nth-of-type(2) {
+      animation-delay: 5000ms;
+    }
+  
+    @keyframes square {
+      from {
+        left: 0;
+      }
+      to {
+        left: calc(100% - 100px);
+      }
+    }
+  &lt;/style&gt;
+  
+  &lt;div class=&quot;animation-delay-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Animation Example 4 -->
+          <a class="anchor" id="animation-part-animation-direction"></a>
+          <article class="example animation-example example-4">
+            <h4 class="example-headline">animation-direction</h4>
+            <p class="example-info">
+              Das folgende Beispiel zeigt vier Boxen mit gleicher Animation und unterschiedlicher
+              <code>animation-direction</code>.
+            </p>
+            <div class="example-content">
+              <h5>normal</h5>
+              <div>
+                <div class="square">A</div>
+              </div>
+              <h5>reverse</h5>
+              <div>
+                <div class="square">B</div>
+              </div>
+              <h5>alternate</h5>
+              <div>
+                <div class="square">C</div>
+              </div>
+              <h5>alternate-reverse</h5>
+              <div>
+                <div class="square">D</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .animation-direction-example {
+      position: relative; 
+    }
+    
+    .animation-direction-example > div {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      animation-name: square;
+      animation-duration: 5000ms;    
+    }
+    
+    .animation-direction-example > div:nth-of-type(1) {
+      animation-direction: normal;
+    }
+    
+    .animation-direction-example > div:nth-of-type(2) {
+      animation-direction: reverse;
+    }
+  
+    .animation-direction-example > div:nth-of-type(3) {
+      animation-direction: alternate;
+    }
+  
+    .animation-direction-example > div:nth-of-type(4) {
+      animation-direction: alternate-reverse;
+    }
+          
+    @keyframes square {
+      from {
+        left: 0;
+      }
+      to {
+        left: calc(100% - 100px);
+      }
+    }
+  &lt;/style&gt;
+        
+  &lt;div class=&quot;animation-direction-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+    &lt;div&gt;D&lt;/div&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Animation Example 5 -->
+          <a class="anchor" id="animation-part-animation-iteration-count"></a>
+          <article class="example animation-example example-5">
+            <h4 class="example-headline">animation-iteration-count</h4>
+            <p class="example-info">
+              Das folgende Beispiel zeigt zwei Boxen mit gleicher Animation.
+              Box <strong>A</strong> hat drei Wiederholungen, Box <strong>B</strong> wird unendlich oft wiederholt.
+            </p>
+            <input type="checkbox" id="play-example-5" title="Animation starten/stoppen">
+            <div class="example-content">
+              <div>
+                <div class="square">A</div>
+              </div>
+              <hr>
+              <div>
+                <div class="square">B</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .animation-iteration-count-example {
+      position: relative; 
+    }
+  
+    .animation-iteration-count-example > div {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      animation-name: square;
+      animation-delay: 0ms;
+      animation-duration: 3000ms;
+    }
+  
+    .animation-iteration-count-example > div:nth-of-type(1) {
+      animation-iteration-count: 3;
+    }
+  
+    .animation-iteration-count-example > div:nth-of-type(2) {
+      animation-iteration-count: infinite;
+    }
+  
+    @keyframes square {
+      from {
+        left: 0;
+      }
+      to {
+        left: calc(100% - 100px);
+      }
+    }
+  &lt;/style&gt;
+  
+  &lt;div class=&quot;animation-iteration-count-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Animation Example 6 -->
+          <a class="anchor" id="animation-part-animation-fill-mode"></a>
+          <article class="example animation-example example-6">
+            <h4 class="example-headline">animation-fill-mode</h4>
+            <p class="example-info">
+              Das folgende Beispiel zeigt vier Boxen mit gleicher Animation und unterschiedlichen Werten für
+              <code>animation-fill-mode</code>.
+            </p>
+            <input type="checkbox" id="play-example-6" title="Animation starten/stoppen" />
+            <div class="example-content">
+              <h5>none</h5>
+              <div>
+                <div class="square">A</div>
+              </div>
+              <h5>forwards</h5>
+              <div>
+                <div class="square">B</div>
+              </div>
+              <h5>backwards</h5>
+              <div>
+                <div class="square">C</div>
+              </div>
+              <h5>both</h5>
+              <div>
+                <div class="square">D</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;  
+    .animation-fill-mode-example {
+      position: relative; 
+    }
+    
+    .animation-fill-mode-example > div {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      animation-name: square;
+      animation-duration: 3000ms; 
+      animation-iteration-count: 1;   
+    }
+    
+    .animation-fill-mode-example > div:nth-of-type(1) {
+      animation-fill-mode: none;
+    }
+    
+    .animation-fill-mode-example > div:nth-of-type(2) {
+      animation-fill-mode: forwards;
+    }
+  
+    .animation-fill-mode-example > div:nth-of-type(3) {
+      animation-fill-mode: backwards;
+    }
+  
+    .animation-fill-mode-example > div:nth-of-type(4) {
+      animation-fill-mode: both;
+    }
+          
+    @keyframes square {
+      from {
+        left: 0;
+      }
+      to {
+        left: calc(100% - 100px);
+      }
+    }
+  &lt;/style&gt;
+        
+  &lt;div class=&quot;animation-fill-mode-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+    &lt;div&gt;C&lt;/div&gt;
+    &lt;div&gt;D&lt;/div&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Animation Example 7 -->
+          <a class="anchor" id="animation-part-animation-play-state"></a>
+          <article class="example animation-example example-7">
+            <h4 class="example-headline">animation-play-state</h4>
+            <p class="example-info">
+              Das folgende Beispiel zeigt zwei Boxen mit gleicher Animation und verschiedenen Werten für
+              <code>animation-play-state</code>.
+            </p>
+            <div class="example-content">
+              <h5>running</h5>
+              <div>
+                <div class="square">A</div>
+              </div>
+              <h5>paused</h5>
+              <div>
+                <div class="square">B</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .animation-play-state-example {
+      position: relative; 
+    }
+
+    .animation-play-state-example > div {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      animation-name: square;
+      animation-duration: 3000ms;       
+    }
+
+    .animation-play-state-example > div:nth-of-type(1) {
+      animation-play-state: running;
+    }
+
+    .animation-play-state-example > div:nth-of-type(2) {
+      animation-play-state: paused;
+    }
+            
+    @keyframes square {
+      from {
+        left: 0;
+      }
+      to {
+        left: calc(100% - 100px);
+      }
+    }
+  &lt;/style&gt;
+            
+  &lt;div class=&quot;animation-play-state-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+    &lt;div&gt;B&lt;/div&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article>
+
+          <!-- Animation Example 8 -->
+          <a id="animation-part-keyframes" class="anchor"></a>
+          <article class="example animation-example example-8">
+            <h4 class="example-headline">@keyframes</h4>
+            <p class="example-info">
+              Das folgende Beispiel verdeutlicht die Anwendung von <code>@keyframes</code>.
+              Über <code>@keyframes</code> werden die verschiedenen Zustände der Animationssequenz definiert.
+              Dies geschieht wie in den Beispielen zuvor über die Schlüsselwörter <code>from</code> und
+              <code>to</code>,<br>
+              für kompexere Animationen kann hier aber auch mit Prozentwerten gearbeitet werden, welche den
+              Fortschritt der Animation repräsentieren.
+            </p>
+            <div class="example-content">
+              <div>
+                <div class="square">A</div>
+              </div>
+            </div>
+            <div class="example-code">
+              <code class="multiline">
+  &lt;style&gt;
+    .animation-keyframes-example {
+      position: relative; 
+    }
+
+    .animation-keyframes-example > div {
+      height: 100px;
+      width: 100px;
+      position: absolute;
+      animation-name: circle-to-square;
+      animation-duration: 3000ms;
+    }
+          
+    @keyframes circle-to-square {
+      0% {
+        border-radius:5px 5px 5px 5px;
+        transform: rotate(0deg);
+      }
+      25% {
+        border-radius: 50% 5px 5px 5px;
+        transform: rotate(-90deg);
+      }
+      50% {
+        border-radius: 50% 50% 5px 5px;
+        transform: rotate(-180deg);
+      }
+      75% {
+        border-radius: 50% 50% 50% 5px;
+        transform: rotate(-270deg);
+      }
+      100% {
+        border-radius: 50% 50% 50% 50%;
+        transform: rotate(-360deg);
+      }
+    }
+  &lt;/style&gt;
+              
+  &lt;div class=&quot;animation-keyframes-example&quot;&gt;
+    &lt;div&gt;A&lt;/div&gt;
+  &lt;/div&gt;
+              </code>
+            </div>
+          </article>
+
+        </article>
+      </section>
+
+      <a class="anchor" id="quellen"></a>
+      <section>
+        <h2>Quellen</h2>
+        <ul>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout" rel="noopener"
+              target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout</a></li>
+          <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" rel="noopener"
+              target="_blank">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout"
+              rel="noopener"
+              target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout</a>
+          </li>
+          <li><a href="https://www.w3schools.com/css/css_grid.asp" rel="noopener"
+              target="_blank">https://www.w3schools.com/css/css_grid.asp</a></li>
+          <li><a href="https://www.w3schools.com/cssref/pr_text_text-transform.php" rel="noopener"
+              target="_blank">https://www.w3schools.com/cssref/pr_text_text-transform.php</a></li>
+          <li><a href="https://www.w3schools.com/css/css_text_decoration.asp" rel="noopener"
+              target="_blank">https://www.w3schools.com/css/css_text_decoration.asp</a></li>
+          <li><a href="https://www.geeksforgeeks.org/css-text-formatting/" rel="noopener"
+              target="_blank">https://www.geeksforgeeks.org/css-text-formatting/</a></li>
+          <li><a href="https://www.w3schools.com/css/css_text_align.asp" rel="noopener"
+              target="_blank">https://www.w3schools.com/css/css_text_align.asp</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position?retiredLocale=de" rel="noopener"
+              target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/position?retiredLocale=de</a></li>
+          <li><a href="https://www.w3schools.com/css/css3_animations.asp" rel="noopener"
+              target="_blank">https://www.w3schools.com/css/css3_animations.asp</a></li>
+          <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations"
+              rel="noopener"
+              target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations</a>
+          </li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+
+</body>
+
+</html>
